@@ -67,16 +67,16 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        Layer_1 {
             bindings = <
-  &kp Q                 &kp W              &kp E                 &kp R              &kp T        &kp Y            &kp U               &kp I              &kp O               &kp P
-  &hrm_left LEFT_ALT A  &hrm_left LCTRL S  &hrm_left LEFT_WIN D  &hrm_left LSHFT F  &kp G        &kp H            &hrm_right RSHFT J  &hrm_right RGUI K  &hrm_right LCTRL L  &hrm_right RALT SEMICOLON
-  &kp Z                 &kp X              &kp C                 &kp V              &kp B        &kp N            &kp M               &kp COMMA          &kp DOT             &kp FSLH
-                                                                 &lt 1 SPACE        &lt 4 TAB    &mt RCTRL ENTER  &lt 2 BSPC
+  &kp Q                 &kp W              &kp F                 &kp P              &kp B        &kp J      &kp L               &kp U              &kp Y               &kp BACKSPACE
+  &hrm_left LEFT_ALT A  &hrm_left LCTRL R  &hrm_left LEFT_WIN S  &hrm_left LSHFT T  &kp G        &kp M      &hrm_right RSHFT N  &hrm_right RGUI E  &hrm_right LCTRL I  &hrm_right RALT O
+  &kp Z                 &kp X              &kp C                 &kp D              &kp V        &kp K      &kp H               &kp COMMA          &kp DOT             &kp FSLH
+                                                                 &mt TAB ESC        &kp SPACE    &kp ENTER  &to 1
             >;
         };
 
-        symbols {
+        Layer_2 {
             bindings = <
   &kp EXCL                  &kp AT                        &kp POUND                    &kp DOLLAR                    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PIPE                 &kp AMPERSAND                  &kp ASTERISK       &kp CARET
   &hrm_left LEFT_ALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LEFT_GUI KP_MINUS  &hrm_left LEFT_SHIFT KP_PLUS  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hrm_right RSHIFT UNDER  &hrm_right RIGHT_GUI KP_EQUAL  &kp DOUBLE_QUOTES  &kp TILDE
@@ -85,7 +85,7 @@
             >;
         };
 
-        numbers {
+        Layer_3 {
             bindings = <
   &kp N1    &kp N2     &kp N3    &kp N4     &kp N5     &kp N6    &kp N7                       &kp N8                       &kp N9                  &kp N0
   &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp TAB    &kp LEFT  &hrm_right RIGHT_SHIFT DOWN  &hrm_right RIGHT_COMMAND UP  &hrm_right RCTRL RIGHT  &kp RIGHT_ALT
@@ -94,7 +94,7 @@
             >;
         };
 
-        bluetooth {
+        Layer_4 {
             bindings = <
   &trans       &trans  &trans  &trans  &trans    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
   &trans       &trans  &trans  &trans  &trans    &bt BT_CLR      &bt BT_CLR_ALL  &trans        &trans        &trans
