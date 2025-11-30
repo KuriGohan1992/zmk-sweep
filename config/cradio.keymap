@@ -2,18 +2,18 @@
  * Copyright (c) 2022 The ZMK Contributors
  * SPDX-License-Identifier: MIT
  */
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50
 
 #include <dt-bindings/zmk/mouse.h>
-#include <behaviors.dtsi>
 #include <behaviors/mouse_keys.dtsi>
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 220
-
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 
@@ -37,7 +37,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms =<U_TAPPING_TERM>;
+            tapping-term-ms = <U_TAPPING_TERM>;
             quick-tap-ms = <U_TAPPING_TERM>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
@@ -67,7 +67,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base_layer {
             bindings = <
   &kp Q                 &kp W              &kp E                 &kp R              &kp T        &kp Y            &kp U               &kp I              &kp O               &kp P
   &hrm_left LEFT_ALT A  &hrm_left LCTRL S  &hrm_left LEFT_WIN D  &hrm_left LSHFT F  &kp G        &kp H            &hrm_right RSHFT J  &hrm_right RGUI K  &hrm_right LCTRL L  &hrm_right RALT SEMICOLON
@@ -87,28 +87,28 @@
 
         numbers {
             bindings = <
-  &kp N1    &kp N2     &kp N3    &kp N4     &kp N5      &kp N6    &kp N7                       &kp N8                       &kp N9                  &kp N0
-  &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp TAB     &kp LEFT  &hrm_right RIGHT_SHIFT DOWN  &hrm_right RIGHT_COMMAND UP  &hrm_right RCTRL RIGHT  &kp RIGHT_ALT
-  &trans    &trans     &trans    &trans     &trans      &trans    &trans                       &trans                       &trans                  &trans
-                                 &trans     &mo 3       &trans    &trans
+  &kp N1    &kp N2     &kp N3    &kp N4     &kp N5     &kp N6    &kp N7                       &kp N8                       &kp N9                  &kp N0
+  &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &kp TAB    &kp LEFT  &hrm_right RIGHT_SHIFT DOWN  &hrm_right RIGHT_COMMAND UP  &hrm_right RCTRL RIGHT  &kp RIGHT_ALT
+  &trans    &trans     &trans    &trans     &trans     &trans    &trans                       &trans                       &trans                  &trans
+                                 &trans     &mo 3      &trans    &trans
             >;
         };
 
         bluetooth {
             bindings = <
-  &trans       &trans  &trans  &trans  &trans    &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-  &trans       &trans  &trans  &trans  &trans    &bt BT_CLR       &bt BT_CLR_ALL  &trans        &trans        &trans
-  &bootloader  &trans  &trans  &trans  &trans    &studio_unlock   &trans          &trans        &trans        &bootloader
-                          &trans  &trans    &trans           &trans
+  &trans       &trans  &trans  &trans  &trans    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+  &trans       &trans  &trans  &trans  &trans    &bt BT_CLR      &bt BT_CLR_ALL  &trans        &trans        &trans
+  &bootloader  &trans  &trans  &trans  &trans    &studio_unlock  &trans          &trans        &trans        &bootloader
+                               &trans  &trans    &trans          &trans
             >;
         };
 
         mouse {
             bindings = <
-  &kp ESC &trans  &trans     &trans      &trans    &trans            &kp F5          &kp F12       &trans           &trans
-  &trans  &trans  &mkp LCLK  &mkp RCLK   &trans    &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-  &trans  &trans  &trans     &trans      &trans    &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                             &trans      &trans    &kp RC(UP_ARROW)  &kp F11
+  &kp ESC  &trans  &trans     &trans     &trans    &trans            &kp F5          &kp F12       &trans           &trans
+  &trans   &trans  &mkp LCLK  &mkp RCLK  &trans    &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+  &trans   &trans  &trans     &trans     &trans    &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                              &trans     &trans    &kp RC(UP_ARROW)  &kp F11
             >;
         };
     };
