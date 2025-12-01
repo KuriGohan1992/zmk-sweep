@@ -63,6 +63,29 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Bootloader {
+            bindings = <&bootloader>;
+            key-positions = <31 32>;
+        };
+
+        Password {
+            bindings = <&pw>;
+            key-positions = <30 33>;
+        };
+    };
+
+    macros {
+        pw: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N8 &kp N2 &kp N9 &kp N2 &kp N4>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
