@@ -112,7 +112,7 @@
 
         Layer_2 {
             bindings = <
-  &none       &none  &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp DOWN   &kp RIGHT       &mmv MOVE_UP    &none            &none
+  &none       &none  &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp DOWN   &kp RIGHT       &mmv MOVE_UP    &none            &kp BACKSPACE
   &kp ESCAPE  &none  &kp LEFT_ALT   &kp LGUI         &none             &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER
   &none       &none  &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP      &kp UP     &kp LEFT        &none           &none            &none
                                     &to 0            &mkp LCLK         &mkp RCLK  &to 3
