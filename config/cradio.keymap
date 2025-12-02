@@ -103,10 +103,10 @@
 
         Layer_1 {
             bindings = <
-  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK
-  &none     &none   &none     &none       &kp LEFT_BRACE          &kp RIGHT_BRACE        &none      &none      &none     &none
-  &none     &none   &none     &none       &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none      &none      &none     &none
-                              &to 0       &to 0                   &to 2                  &to 2
+  &kp TAB          &kp AT    &kp HASH         &kp DOLLAR      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT       &kp CARET              &kp AMPS   &kp BACKSPACE
+  &mt TILDE GRAVE  &kp EXCL  &mt UNDER MINUS  &mt PLUS EQUAL  &kp LEFT_BRACE          &kp RIGHT_BRACE        &mt COLON SEMI  &mt DOUBLE_QUOTES SQT  &kp ASTRK  &kp K_BACK
+  &none            &none     &none            &none           &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none           &none                  &none      &to 2
+                                              &to 0           &mt LGUI ESC            &mt RIGHT_ALT ENTER    &to 3
             >;
         };
 
