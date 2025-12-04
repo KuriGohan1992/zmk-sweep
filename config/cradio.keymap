@@ -125,6 +125,12 @@
         };
 
         Mouse {
+            &mmv {
+                x-input-code = <INPUT_REL_X>;
+                y-input-code = <INPUT_REL_Y>;
+                time-to-max-speed-ms = <50>;
+                acceleration-exponent = <50>;
+            };
             bindings = <
   &mo 4          &kp LC(LA(D))      &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN      &kp DOWN       &kp RIGHT       &mmv MOVE_UP     &kp LC(LG(F))    &mt DEL BACKSPACE
   &kp LC(LA(Z))  &kp LC(LA(E))      &mkp RCLK      &mkp LCLK        &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp LC(LA(C))
