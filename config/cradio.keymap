@@ -121,10 +121,10 @@
 
         Mouse {
             bindings = <
-  &none          &kp LC(LA(D))      &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp DOWN       &kp RIGHT       &mmv MOVE_UP     &kp LC(LG(F))    &mt DEL BACKSPACE
-  &kp LC(LA(Z))  &kp LC(LA(E))      &mkp RCLK      &mkp LCLK        &kp LA(LC(H))     &kp LA(LC(L))  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp LC(LA(C))
-  &none          &kp LA(LC(ENTER))  &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP      &kp UP         &kp LEFT        &kp LA(LS(TAB))  &kp LA(TAB)      &to 2
-                                                   &to 0            &kp LEFT_GUI      &kp ENTER      &to 1
+  &none          &kp LC(LA(D))      &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN      &kp DOWN       &kp RIGHT       &mmv MOVE_UP     &kp LC(LG(F))    &mt DEL BACKSPACE
+  &kp LC(LA(Z))  &kp LC(LA(E))      &mkp RCLK      &mkp LCLK        &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp LC(LA(C))
+  &none          &kp LA(LC(ENTER))  &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP        &kp UP         &kp LEFT        &kp LA(LS(TAB))  &kp LA(TAB)      &to 2
+                                                   &to 0            &mt LEFT_GUI ESC    &kp ENTER      &to 1
             >;
         };
     };
