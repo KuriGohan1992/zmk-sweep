@@ -112,19 +112,19 @@
 
         Numbers {
             bindings = <
-  &none       &none       &none         &none         &none           &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &mt DEL BACKSPACE
-  &kp TAB     &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none           &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
-  &kp LSHIFT  &none       &none         &none         &none           &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &to 3
-                                        &to 0         &kp LEFT_GUI    &none            &to 1
+  &none       &kp C_AC_ZOOM  &kp C_AC_ZOOM_OUT  &kp C_AC_ZOOM_IN  &none           &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &mt DEL BACKSPACE
+  &kp TAB     &kp K_MUTE     &kp C_VOL_DN       &kp C_VOL_UP      &none           &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
+  &kp LSHIFT  &none          &none              &none             &none           &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &to 3
+                                                &to 0             &kp LEFT_GUI    &none            &to 1
             >;
         };
 
         Mouse {
             bindings = <
-  &none  &none  &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp DOWN   &kp RIGHT       &mmv MOVE_UP    &none            &mt DEL BACKSPACE
-  &none  &none  &mkp RCLK      &mkp LCLK        &none             &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-  &none  &none  &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP      &kp UP     &kp LEFT        &kp LT          &kp GT           &to 2
-                               &to 0            &kp LEFT_GUI      &kp ENTER  &to 1
+  &none          &kp LC(LA(D))      &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp DOWN       &kp RIGHT       &mmv MOVE_UP    &kp LS(LA(LC(LG(F))))  &mt DEL BACKSPACE
+  &kp LC(LA(Z))  &kp LC(LA(E))      &mkp RCLK      &mkp LCLK        &kp LA(LC(H))     &kp LA(LC(L))  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT        &kp LC(LA(C))
+  &none          &kp LA(LC(ENTER))  &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP      &kp UP         &kp LEFT        &kp LT          &kp GT                 &to 2
+                                                   &to 0            &kp LEFT_GUI      &kp ENTER      &to 1
             >;
         };
     };
