@@ -135,28 +135,28 @@
 
         Fast {
             bindings = <
-  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(32)  &msc MOVE_Y(32)      &kp DOWN       &kp RIGHT       &mmv MOVE_Y(-3200)     &kp LC(LG(F))    &mt DEL BACKSPACE
-  &mo 5              &mo 4          &mkp RCLK      &mkp LCLK        &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-3200)  &mmv MOVE_Y(3200)   &mmv MOVE_X(3200)  &kp LC(LA(C))
-  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-32)   &msc MOVE_Y(-32)        &kp UP         &kp LEFT        &kp LA(LS(TAB))  &kp LA(TAB)      &to 2
-                                                   &to 0            &mt LEFT_GUI ESC    &kp ENTER      &to 1
+  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(32)   &msc MOVE_Y(32)     &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-3200)  &kp LC(LG(F))      &mt DEL BACKSPACE
+  &mo 5              &mo 4          &mkp RCLK      &mkp LCLK         &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-3200)  &mmv MOVE_Y(3200)   &mmv MOVE_X(3200)  &kp LC(LA(C))
+  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-32)  &msc MOVE_Y(-32)    &kp UP         &kp LEFT            &kp LA(LS(TAB))     &kp LA(TAB)        &to 2
+                                                   &to 0             &mt LEFT_GUI ESC    &kp ENTER      &to 1
             >;
         };
 
         Slow {
             bindings = <
-  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(4)  &msc MOVE_Y(4)      &kp DOWN       &kp RIGHT       &mmv MOVE_Y(-400)     &kp LC(LG(F))    &mt DEL BACKSPACE
+  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(4)   &msc MOVE_Y(4)      &kp DOWN       &kp RIGHT          &mmv MOVE_Y(-400)  &kp LC(LG(F))     &mt DEL BACKSPACE
   &mo 5              &mo 4          &mkp RCLK      &mkp LCLK        &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &kp LC(LA(C))
-  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-4)   &msc MOVE_Y(-4)        &kp UP         &kp LEFT        &kp LA(LS(TAB))  &kp LA(TAB)      &to 2
+  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-4)  &msc MOVE_Y(-4)     &kp UP         &kp LEFT           &kp LA(LS(TAB))    &kp LA(TAB)       &to 2
                                                    &to 0            &mt LEFT_GUI ESC    &kp ENTER      &to 1
             >;
         };
 
         QWERTY {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R      &kp T            &kp Y            &kp U  &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F      &kp G            &kp H            &kp J  &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V      &kp B            &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH
-                       &kp SPACE  &mt LCTRL ESC    &mt RSHFT ENTER  &to 1
+  &kp Q  &kp W  &kp E  &kp R      &kp T                 &kp Y                    &kp U  &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &kp F      &kp G                 &kp H                    &kp J  &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C  &kp V      &kp B                 &kp N                    &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                       &kp SPACE  &mt LEFT_SHIFT ESC    &mt RIGHT_CONTROL ENTER  &to 1
             >;
         };
     };
