@@ -94,10 +94,10 @@
 
         Letters {
             bindings = <
-  &kp Q  &kp W              &kp F                 &kp P                       &kp B                   &kp J                  &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
-  &kp A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T        &kp G                   &kp M                  &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
-  &kp Z  &kp X              &kp C                 &kp D                       &kp V                   &kp K                  &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
-                                                  &mt LS(LA(LC(LGUI))) SPACE  &mt LEFT_CONTROL ESC    &mt RIGHT_SHIFT ENTER  &to 1
+  &kp Q  &kp W              &kp F                 &kp P                       &kp B                 &kp J                    &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
+  &kp A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T        &kp G                 &kp M                    &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
+  &kp Z  &kp X              &kp C                 &kp D                       &kp V                 &kp K                    &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
+                                                  &mt LS(LA(LC(LGUI))) SPACE  &mt LEFT_SHIFT ESC    &mt RIGHT_CONTROL ENTER  &to 1
             >;
         };
 
@@ -106,7 +106,7 @@
   &kp GRAVE  &kp AT    &kp HASH         &kp DOLLAR      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT       &kp CARET              &kp AMPS   &kp BACKSPACE
   &none      &kp EXCL  &mt UNDER MINUS  &mt PLUS EQUAL  &kp LEFT_BRACE          &kp RIGHT_BRACE        &mt COLON SEMI  &mt DOUBLE_QUOTES SQT  &kp ASTRK  &kp K_BACK
   &none      &none     &none            &none           &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none           &none                  &none      &to 3
-                                        &to 0           &mt LEFT_ALT ESC        &mt RIGHT_SHIFT ENTER  &to 2
+                                        &to 0           &mt LEFT_SHIFT ESC      &mt RIGHT_ALT ENTER    &to 2
             >;
         };
 
