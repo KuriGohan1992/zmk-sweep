@@ -121,10 +121,10 @@
 
         Mouse {
             bindings = <
-  &kp TAB      &none             &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp DOWN   &kp RIGHT       &mmv MOVE_UP    &none            &kp BACKSPACE
-  &kp LS(TAB)  &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LGUI         &kp LEFT_SHIFT    &kp LGUI   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER
-  &none        &none             &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP      &kp UP     &kp LEFT        &kp LT          &kp GT           &to 2
-                                                &to 0            &mkp LCLK         &mkp RCLK  &to 1
+  &kp TAB         &none  &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp DOWN   &kp RIGHT       &mmv MOVE_UP    &none            &kp BACKSPACE
+  &kp LEFT_SHIFT  &none  &none          &kp LEFT_GUI     &none             &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK
+  &none           &none  &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP      &kp UP     &kp LEFT        &kp LT          &kp GT           &to 2
+                                        &to 0            &mkp LCLK         &kp ENTER  &to 1
             >;
         };
     };
