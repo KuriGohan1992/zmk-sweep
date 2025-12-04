@@ -80,7 +80,7 @@
         };
 
         qwerty {
-            bindings = <&tog 4>;
+            bindings = <&to 4>;
             key-positions = <31 32>;
         };
     };
