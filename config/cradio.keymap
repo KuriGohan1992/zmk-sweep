@@ -92,7 +92,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Layer_0 {
+        Letters {
             bindings = <
   &kp Q  &kp W              &kp F                 &kp P                 &kp B                   &kp J                  &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
   &kp A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G                   &kp M                  &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
@@ -101,30 +101,30 @@
             >;
         };
 
-        Layer_1 {
+        Symbols {
             bindings = <
-  &kp TAB          &kp AT    &kp HASH         &kp DOLLAR      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT       &kp CARET              &kp AMPS   &kp BACKSPACE
-  &mt TILDE GRAVE  &kp EXCL  &mt UNDER MINUS  &mt PLUS EQUAL  &kp LEFT_BRACE          &kp RIGHT_BRACE        &mt COLON SEMI  &mt DOUBLE_QUOTES SQT  &kp ASTRK  &kp K_BACK
-  &none            &none     &none            &none           &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none           &none                  &none      &to 2
-                                              &to 0           &mt LGUI ESC            &mt RIGHT_ALT ENTER    &to 3
+  &kp TAB      &kp AT    &kp HASH         &kp DOLLAR      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT       &kp CARET              &kp AMPS   &kp BACKSPACE
+  &kp LS(TAB)  &kp EXCL  &mt UNDER MINUS  &mt PLUS EQUAL  &kp LEFT_BRACE          &kp RIGHT_BRACE        &mt COLON SEMI  &mt DOUBLE_QUOTES SQT  &kp ASTRK  &kp K_BACK
+  &none        &none     &none            &none           &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &none           &none                  &none      &to 3
+                                          &to 0           &mt LGUI ESC            &mt RIGHT_ALT ENTER    &to 2
             >;
         };
 
-        Layer_2 {
+        Numbers {
             bindings = <
-  &none       &kp F10           &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp DOWN   &kp RIGHT       &mmv MOVE_UP    &none            &kp BACKSPACE
-  &kp ESCAPE  &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LGUI         &none             &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER
-  &none       &kp F11           &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP      &kp UP     &kp LEFT        &kp LT          &kp GT           &none
-                                               &to 0            &mkp LCLK         &mkp RCLK  &to 3
-            >;
-        };
-
-        Layer_3 {
-            bindings = <
-  &none        &none  &none  &none  &none    &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
+  &none        &none  &none  &none  &none    &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
   &none        &none  &none  &none  &none    &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
-  &bootloader  &none  &none  &none  &none    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none
-                             &to 0  &to 0    &none            &none
+  &bootloader  &none  &none  &none  &none    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &to 3
+                             &to 0  &none    &none            &to 1
+            >;
+        };
+
+        Mouse {
+            bindings = <
+  &none       &kp LA(LS(F11))   &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN    &kp DOWN   &kp RIGHT       &mmv MOVE_UP    &none            &kp BACKSPACE
+  &kp ESCAPE  &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LGUI         &none             &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER
+  &none       &kp LS(LA(F12))   &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP      &kp UP     &kp LEFT        &kp LT          &kp GT           &to 2
+                                               &to 0            &mkp LCLK         &mkp RCLK  &to 1
             >;
         };
     };
