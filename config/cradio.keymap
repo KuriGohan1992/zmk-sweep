@@ -135,18 +135,18 @@
 
         Fast {
             bindings = <
-  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(32)   &msc MOVE_Y(32)     &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-4000)  &kp LC(LG(F))      &mt DEL BACKSPACE
+  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(40)   &msc MOVE_Y(-40)     &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-4000)  &kp LC(LG(F))      &mt DEL BACKSPACE
   &mo 5              &mo 4          &mkp RCLK      &mkp LCLK         &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-4000)  &mmv MOVE_Y(4000)   &mmv MOVE_X(4000)  &kp LC(LA(C))
-  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-32)  &msc MOVE_Y(-32)    &kp UP         &kp LEFT            &kp LA(LS(TAB))     &kp LA(TAB)        &to 2
+  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-40)  &msc MOVE_Y(40)    &kp UP         &kp LEFT            &kp LA(LS(TAB))     &kp LA(TAB)        &to 2
                                                    &to 0             &mt LEFT_GUI ESC    &kp ENTER      &to 1
             >;
         };
 
         Slow {
             bindings = <
-  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(4)   &msc MOVE_Y(4)      &kp DOWN       &kp RIGHT          &mmv MOVE_Y(-400)  &kp LC(LG(F))     &mt DEL BACKSPACE
+  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(4)   &msc MOVE_Y(-4)      &kp DOWN       &kp RIGHT          &mmv MOVE_Y(-400)  &kp LC(LG(F))     &mt DEL BACKSPACE
   &mo 5              &mo 4          &mkp RCLK      &mkp LCLK        &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &kp LC(LA(C))
-  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-4)  &msc MOVE_Y(-4)     &kp UP         &kp LEFT           &kp LA(LS(TAB))    &kp LA(TAB)       &to 2
+  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-4)  &msc MOVE_Y(4)     &kp UP         &kp LEFT           &kp LA(LS(TAB))    &kp LA(TAB)       &to 2
                                                    &to 0            &mt LEFT_GUI ESC    &kp ENTER      &to 1
             >;
         };
