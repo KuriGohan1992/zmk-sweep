@@ -118,10 +118,10 @@
 
         Symbols {
             bindings = <
-  &kp GRAVE  &kp AT    &kp HASH   &kp DOLLAR  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT  &kp CARET          &kp AMPS   &mt DEL BACKSPACE
+  &kp GRAVE  &kp AT    &kp HASH   &kp DOLLAR  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT  &kp CARET          &kp AMPS   &kp DEL
   &kp SQT    &kp EXCL  &kp EQUAL  &kp UNDER   &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp ASTRK  &kp QMARK
   &kp BSLH   &kp PIPE  &kp PLUS   &kp MINUS   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI   &kp LT             &kp GT     &to 3
-                                  &to 0       &mt LEFT_SHIFT ESC      &mt RIGHT_ALT ENTER    &to 2
+                                  &to 0       &mt LEFT_ALT ESC        &mt RSHIFT ENTER       &to 2
             >;
         };
 
