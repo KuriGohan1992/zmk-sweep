@@ -102,15 +102,15 @@
   &kp Q  &kp W              &kp F                 &kp P                       &kp B                 &kp J                    &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
   &kp A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T        &kp G                 &kp M                    &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
   &kp Z  &kp X              &kp C                 &kp D                       &kp V                 &kp K                    &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
-                                                  &mt LS(LA(LC(LGUI))) SPACE  &mt LEFT_SHIFT ESC    &mt RIGHT_CONTROL ENTER  &mo 1
+                                                  &mt LS(LA(LC(LGUI))) SPACE  &mt LEFT_SHIFT ESC    &mt RIGHT_CONTROL ENTER  &to 1
             >;
         };
 
         Symbols {
             bindings = <
-  &kp GRAVE  &kp AT    &kp HASH   &kp DOLLAR  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT  &kp CARET          &kp AMPS   &kp DEL
-  &kp SQT    &kp EXCL  &kp EQUAL  &kp UNDER   &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp ASTRK  &kp BSLH
-  &kp TILDE  &kp PIPE  &kp PLUS   &kp MINUS   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI   &kp LT             &kp GT     &kp QUESTION
+  &kp GRAVE  &kp AT    &kp HASH   &kp DOLLAR  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT  &kp CARET          &kp AMPS   &mt DEL BACKSPACE
+  &kp SQT    &kp EXCL  &kp EQUAL  &kp UNDER   &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp ASTRK  &kp QMARK
+  &kp BSLH   &kp PIPE  &kp PLUS   &kp MINUS   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI   &kp LT             &kp GT     &to 3
                                   &to 0       &mt LEFT_SHIFT ESC      &mt RIGHT_ALT ENTER    &to 2
             >;
         };
@@ -135,18 +135,18 @@
 
         Fast {
             bindings = <
-  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(40)   &msc MOVE_Y(-40)    &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-4000)  &kp LC(LG(F))      &mt DEL BACKSPACE
+  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(40)   &msc MOVE_Y(-40)     &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-4000)  &kp LC(LG(F))      &mt DEL BACKSPACE
   &mo 5              &mo 4          &mkp RCLK      &mkp LCLK         &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-4000)  &mmv MOVE_Y(4000)   &mmv MOVE_X(4000)  &kp LC(LA(C))
-  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-40)  &msc MOVE_Y(40)     &kp UP         &kp LEFT            &kp LA(LS(TAB))     &kp LA(TAB)        &to 2
+  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-40)  &msc MOVE_Y(40)    &kp UP         &kp LEFT            &kp LA(LS(TAB))     &kp LA(TAB)        &to 2
                                                    &to 0             &mt LEFT_GUI ESC    &kp ENTER      &to 1
             >;
         };
 
         Slow {
             bindings = <
-  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(4)   &msc MOVE_Y(-4)     &kp DOWN       &kp RIGHT          &mmv MOVE_Y(-400)  &kp LC(LG(F))     &mt DEL BACKSPACE
+  &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_X(4)   &msc MOVE_Y(-4)      &kp DOWN       &kp RIGHT          &mmv MOVE_Y(-400)  &kp LC(LG(F))     &mt DEL BACKSPACE
   &mo 5              &mo 4          &mkp RCLK      &mkp LCLK        &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &kp LC(LA(C))
-  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-4)  &msc MOVE_Y(4)      &kp UP         &kp LEFT           &kp LA(LS(TAB))    &kp LA(TAB)       &to 2
+  &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-4)  &msc MOVE_Y(4)     &kp UP         &kp LEFT           &kp LA(LS(TAB))    &kp LA(TAB)       &to 2
                                                    &to 0            &mt LEFT_GUI ESC    &kp ENTER      &to 1
             >;
         };
