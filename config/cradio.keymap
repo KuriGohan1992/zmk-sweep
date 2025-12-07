@@ -98,11 +98,6 @@
             bindings = <&to 0>;
             key-positions = <30 33>;
         };
-
-        Mouse {
-            bindings = <&to 3>;
-            key-positions = <30 12>;
-        };
     };
 
     macros {
