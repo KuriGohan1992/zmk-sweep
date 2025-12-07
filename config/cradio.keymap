@@ -90,8 +90,13 @@
         };
 
         qwerty {
-            bindings = <&to 6>;
+            bindings = <&to 7>;
             key-positions = <31 32>;
+        };
+
+        base {
+            bindings = <&to 0>;
+            key-positions = <30 33>;
         };
     };
 
@@ -107,21 +112,21 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Letters {
+        Base {
             bindings = <
   &kp Q  &kp W              &kp F                 &kp P                       &kp B                 &kp J                    &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
   &kp A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T        &kp G                 &kp M                    &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
   &kp Z  &kp X              &kp C                 &kp D                       &kp V                 &kp K                    &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
-                                                  &mt LS(LA(LC(LGUI))) SPACE  &mt LEFT_SHIFT ESC    &mt RIGHT_CONTROL ENTER  &mo 1
+                                                  &mt LS(LA(LC(LGUI))) SPACE  &mt LEFT_SHIFT ESC    &mt RIGHT_CONTROL ENTER  &mo_tog 1 1
             >;
         };
 
         Symbols {
             bindings = <
-  &kp GRAVE  &kp AT    &kp HASH   &kp DOLLAR  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT  &kp CARET          &kp AMPS   &kp DEL
-  &kp SQT    &kp EXCL  &kp EQUAL  &kp UNDER   &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp ASTRK  &kp QMARK
-  &kp BSLH   &kp PIPE  &kp PLUS   &kp MINUS   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI   &kp LT             &kp GT     &to 3
-                                  &mo 2       &mt LEFT_ALT ESC        &mt RSHIFT ENTER       &to 2
+  &kp GRAVE  &kp AT    &kp HASH   &kp DOLLAR   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT  &kp CARET          &kp AMPS   &kp DEL
+  &kp SQT    &kp EXCL  &kp EQUAL  &kp UNDER    &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp ASTRK  &kp QMARK
+  &kp BSLH   &kp PIPE  &kp PLUS   &kp MINUS    &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI   &kp LT             &kp GT     &to 3
+                                  &mo_tog 2 2  &mt LEFT_ALT ESC        &mt RSHIFT ENTER       &to 2
             >;
         };
 
@@ -158,6 +163,15 @@
   &mo 5              &mo 4          &mkp RCLK      &mkp LCLK        &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &kp LC(LA(C))
   &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_X(-4)  &msc MOVE_Y(4)      &kp UP         &kp LEFT           &kp LA(LS(TAB))    &kp LA(TAB)       &to 2
                                                    &to 0            &mt LEFT_GUI ESC    &kp ENTER      &mo_tog 1 1
+            >;
+        };
+
+        Special {
+            bindings = <
+  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none           &kp F9     &kp F10      &kp F11  &kp F12  &mt DEL BACKSPACE
+  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)      &kp F5     &kp F6       &kp F7   &kp F8   &none
+  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)      &kp F1     &kp F2       &kp F3   &kp F4   &to 3
+                                         &to 0          &kp LEFT_GUI    &kp ENTER  &mo_tog 1 1
             >;
         };
 
