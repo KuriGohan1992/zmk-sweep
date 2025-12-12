@@ -114,10 +114,10 @@
 
         Base {
             bindings = <
-  &kp Q      &kp W              &kp F                 &kp P                 &kp B                       &kp J                    &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
-  &mt TAB A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G                       &kp M                    &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &mt CLCK O
-  &kp Z      &kp X              &kp C                 &kp D                 &kp V                       &kp K                    &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
-                                                      &mt LSHIFT SPACE      &mt LS(LA(LC(LGUI))) ESC    &mt RIGHT_CONTROL ENTER  &mo_tog 1 6
+  &kp Q      &kp W              &kp F                 &kp P                       &kp B                 &kp J                    &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
+  &mt TAB A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T        &kp G                 &kp M                    &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &mt CLCK O
+  &kp Z      &kp X              &kp C                 &kp D                       &kp V                 &kp K                    &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
+                                                      &mt LS(LA(LC(LGUI))) SPACE  &mt LEFT_SHIFT ESC    &mt RIGHT_CONTROL ENTER  &mo_tog 1 6
             >;
         };
 
@@ -132,10 +132,10 @@
 
         Numbers {
             bindings = <
-  &none  &none  &none  &none  &none      &none   &kp N7       &kp N8  &kp N9  &kp BACKSPACE
-  &none  &none  &none  &none  &none      &none   &kp N4       &kp N5  &kp N6  &kp ENTER
-  &none  &none  &none  &none  &none      &none   &kp N1       &kp N2  &kp N3  &to 3
-                       &to 0  &kp ESC    &kp N0  &mo_tog 1 1
+  &none  &none  &none  &none      &none      &none   &kp N7       &kp N8  &kp N9  &kp BACKSPACE
+  &none  &none  &none  &none      &none      &none   &kp N4       &kp N5  &kp N6  &kp ENTER
+  &none  &none  &none  &none      &none      &none   &kp N1       &kp N2  &kp N3  &to 3
+                       &kp SPACE  &kp ESC    &kp N0  &mo_tog 1 1
             >;
         };
 
