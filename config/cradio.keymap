@@ -21,7 +21,7 @@
 &mt {
     tapping-term-ms = <U_TAPPING_TERM>;
     quick-tap-ms = <U_TAPPING_TERM>;
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
 };
 
 &lt {
