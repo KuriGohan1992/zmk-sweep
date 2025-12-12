@@ -144,7 +144,7 @@
   &kp LA(LC(ENTER))  &kp LC(LA(D))  &kp PAGE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN      &kp DOWN       &kp RIGHT       &mmv MOVE_UP     &kp LC(LG(F))    &mt DEL BACKSPACE
   &mo 5              &mo 4          &mkp RCLK      &mkp LCLK        &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp LC(LA(C))
   &kp LA(LC(Z))      &kp LA(LC(E))  &kp PAGE_UP    &msc SCRL_LEFT   &msc SCRL_UP        &kp UP         &kp LEFT        &kp LA(LS(TAB))  &kp LA(TAB)      &to 2
-                                                   &to 0            &mt LEFT_GUI ESC    &kp ENTER      &mo_tog 1 6
+                                                   &to 0            &mt LEFT_GUI ESC    &kp ENTER      &to 6
             >;
         };
 
@@ -168,10 +168,10 @@
 
         Special {
             bindings = <
-  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none               &kp F9     &kp F10      &kp F11  &kp F12  &mt DEL BACKSPACE
-  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &kp F5     &kp F6       &kp F7   &kp F8   &none
-  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &kp F1     &kp F2       &kp F3   &kp F4   &to 3
-                                         &to 0          &mt LEFT_GUI ESC    &kp ENTER  &mo_tog 1 3
+  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none               &kp F9     &kp F10  &kp F11  &kp F12  &mt DEL BACKSPACE
+  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &kp F5     &kp F6   &kp F7   &kp F8   &none
+  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &kp F1     &kp F2   &kp F3   &kp F4   &to 3
+                                         &to 0          &mt LEFT_GUI ESC    &kp ENTER  &to 3
             >;
         };
 
