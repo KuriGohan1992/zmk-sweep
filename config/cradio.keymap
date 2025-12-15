@@ -123,10 +123,10 @@
 
         Symbols {
             bindings = <
-  &kp TILDE  &kp AT    &kp HASH   &kp DOLLAR   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT  &kp CARET          &kp AMPS   &kp DEL
-  &kp MINUS  &kp EXCL  &kp EQUAL  &kp UNDER    &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp ASTRK  &kp SQT
-  &kp BSLH   &kp PIPE  &kp GRAVE  &kp PLUS     &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI   &kp LT             &kp GT     &kp QMARK
-                                  &mo_tog 2 2  &mt LEFT_ALT ESC        &mt RSHIFT ENTER       &to 0
+  &kp TILDE  &kp AT                       &kp HASH                  &kp DOLLAR                &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT                   &kp CARET                 &kp AMPS                        &kp DEL
+  &kp MINUS  &hrm_left LEFT_CONTROL EXCL  &hrm_left LEFT_ALT EQUAL  &hrm_left LEFT_GUI UNDER  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hrm_right RIGHT_GUI COLON  &hrm_right RIGHT_ALT DQT  &hrm_right RIGHT_CONTROL ASTRK  &kp SQT
+  &kp BSLH   &kp PIPE                     &kp GRAVE                 &kp PLUS                  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI                    &kp LT                    &kp GT                          &kp QMARK
+                                                                    &mo_tog 2 2               &mt LS(LEFT_ALT) ESC    &mt RSHIFT ENTER       &to 0
             >;
         };
 
@@ -168,19 +168,19 @@
 
         Special {
             bindings = <
-  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none               &kp F9     &kp LG(LEFT)  &kp LG(RIGHT)  &kp F12  &mt DEL BACKSPACE
-  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &kp F5     &kp LA(LEFT)  &kp LA(RIGHT)  &kp F8   &kp CLCK
-  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &kp F1     &kp F2        &kp F3         &kp F4   &to 3
+  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none               &none      &kp LG(LEFT)  &kp LG(RIGHT)  &none  &none
+  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &none      &kp LA(LEFT)  &kp LA(RIGHT)  &none  &kp CLCK
+  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &none      &none         &none          &none  &none
                                          &to 0          &mt LEFT_GUI ESC    &kp ENTER  &to 3
             >;
         };
 
         QWERTY {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R      &kp T                 &kp Y                    &kp U        &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F      &kp G                 &kp H                    &kp J        &kp K      &kp L    &kp BACKSPACE
-  &kp Z  &kp X  &kp C  &kp V      &kp B                 &kp N                    &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                       &kp SPACE  &mt LEFT_SHIFT ESC    &mt RIGHT_CONTROL ENTER  &mo_tog 1 6
+  &kp Q  &kp W  &kp E  &kp R                 &kp T                           &kp Y                    &kp U        &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &kp F                 &kp G                           &kp H                    &kp J        &kp K      &kp L    &kp BACKSPACE
+  &kp Z  &kp X  &kp C  &kp V                 &kp B                           &kp N                    &kp M        &kp COMMA  &kp DOT  &kp FSLH
+                       &mt LEFT_SHIFT SPACE  &mt LS(LA(LC(LEFT_GUI))) ESC    &mt RIGHT_CONTROL ENTER  &mo_tog 1 6
             >;
         };
     };
