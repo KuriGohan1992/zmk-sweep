@@ -124,8 +124,8 @@
         Symbols {
             bindings = <
   &kp TILDE  &kp AT    &kp HASH   &kp DOLLAR   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT  &kp CARET          &kp AMPS   &kp DEL
-  &kp GRAVE  &kp EXCL  &kp EQUAL  &kp UNDER    &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp ASTRK  &kp SQT
-  &kp BSLH   &kp PIPE  &kp PLUS   &kp MINUS    &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI   &kp LT             &kp GT     &kp QMARK
+  &kp MINUS  &kp EXCL  &kp EQUAL  &kp UNDER    &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COLON  &kp DOUBLE_QUOTES  &kp ASTRK  &kp SQT
+  &kp BSLH   &kp PIPE  &kp GRAVE  &kp PLUS     &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI   &kp LT             &kp GT     &kp QMARK
                                   &mo_tog 2 2  &mt LEFT_ALT ESC        &mt RSHIFT ENTER       &to 0
             >;
         };
