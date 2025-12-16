@@ -90,7 +90,7 @@
         };
 
         qwerty {
-            bindings = <&to 7>;
+            bindings = <&to 0>;
             key-positions = <31 32>;
         };
 
@@ -123,10 +123,10 @@
 
         Symbols {
             bindings = <
-  &kp TILDE  &kp AT                       &kp HASH                  &kp DOLLAR                &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PRCNT                   &kp CARET                 &kp AMPS                        &kp DEL
-  &kp MINUS  &hrm_left LEFT_CONTROL EXCL  &hrm_left LEFT_ALT EQUAL  &hrm_left LEFT_GUI UNDER  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hrm_right RIGHT_GUI COLON  &hrm_right RIGHT_ALT DQT  &hrm_right RIGHT_CONTROL ASTRK  &kp SQT
-  &kp BSLH   &kp PIPE                     &kp GRAVE                 &kp PLUS                  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp SEMI                    &kp LT                    &kp GT                          &kp QMARK
-                                                                    &mo_tog 2 2               &mt LS(LEFT_ALT) ESC    &mt RSHIFT ENTER       &to 0
+  &kp TILDE  &kp EXCL                      &kp AT                    &kp HASH                             &kp DLLR                &kp PRCNT         &kp CARET                               &kp AMPERSAND             &kp ASTRK                       &kp DEL
+  &kp MINUS  &hrm_left LEFT_CONTROL UNDER  &hrm_left LEFT_ALT EQUAL  &hrm_left LEFT_GUI LEFT_PARENTHESIS  &kp LEFT_BRACE          &kp RIGHT_BRACE   &hrm_right RIGHT_GUI RIGHT_PARENTHESIS  &hrm_right RIGHT_ALT DQT  &hrm_right RIGHT_CONTROL COLON  &kp SEMI
+  &kp PLUS   &kp SQT                       &kp GRAVE                 &kp LBKT                             &kp BSLH                &kp PIPE          &kp RBKT                                &kp LT                    &kp GT                          &kp QMARK
+                                                                     &mo_tog 2 2                          &mt LS(LEFT_ALT) ESC    &mt RSHIFT ENTER  &to 0
             >;
         };
 
