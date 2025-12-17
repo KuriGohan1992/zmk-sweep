@@ -169,10 +169,10 @@
 
         Special {
             bindings = <
-  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none               &none      &kp LG(LEFT)  &kp LG(RIGHT)  &none  &none
-  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &none      &kp LA(LEFT)  &kp LA(RIGHT)  &none  &kp CLCK
-  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &none      &bt BT_SEL 0  &bt BT_SEL 1   &none  &none
-                                         &to 0          &mt LEFT_GUI ESC    &kp ENTER  &to 3
+  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none               &none       &kp LG(LEFT)  &kp LG(RIGHT)  &none         &caps_word
+  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &none       &kp LA(LEFT)  &kp LA(RIGHT)  &none         &kp CLCK
+  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &none
+                                         &to 0          &mt LEFT_GUI ESC    &kp ENTER   &to 3
             >;
         };
 
