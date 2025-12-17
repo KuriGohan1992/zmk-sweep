@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 3000
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 16
 
 #include <dt-bindings/zmk/mouse.h>
@@ -160,8 +160,8 @@
 
         Fast {
             bindings = <
-  &mt LG(W) LG(Q)  &kp LC(LA(D))  &kp PAGE_DOWN     &msc MOVE_Y(-40) &msc MOVE_X(40)   &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-4000)  &kp LC(LG(F))      &mt DEL BACKSPACE
-  &mo 5            &mo 4          &mkp RCLK      &mkp LCLK         &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-4000)  &mmv MOVE_Y(4000)   &mmv MOVE_X(4000)  &kp LC(LA(C))
+  &mt LG(W) LG(Q)  &kp LC(LA(D))  &kp PAGE_DOWN     &msc MOVE_Y(-40) &msc MOVE_X(40)   &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-5000)  &kp LC(LG(F))      &mt DEL BACKSPACE
+  &mo 5            &mo 4          &mkp RCLK      &mkp LCLK         &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-5000)  &mmv MOVE_Y(5000)   &mmv MOVE_X(5000)  &kp LC(LA(C))
   &kp LA(LC(Z))    &kp LA(LC(E))  &kp PAGE_UP      &msc MOVE_Y(40) &msc MOVE_X(-40)    &kp UP         &kp LEFT            &kp LA(LS(TAB))     &kp LA(TAB)        &kp LA(LC(ENTER))
                                                  &to 0             &mt LEFT_GUI ESC    &kp ENTER      &kp_tog LEFT_ALT 6
             >;
