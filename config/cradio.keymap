@@ -115,18 +115,18 @@
 
         Base {
             bindings = <
-  &kp Q  &kp W              &kp F                 &kp P                 &kp B                       &kp J                    &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
-  &kp A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G                       &kp M                    &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
-  &kp Z  &kp X              &kp C                 &kp D                 &kp V                       &kp K                    &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
-                                                  &mt LEFT_SHIFT SPACE  &mt LA(LC(LEFT_GUI)) ESC    &mt RA(RIGHT_GUI) ENTER  &mo_tog 1 6
+  &kp Q            &kp W              &kp F                 &kp P                 &kp B                       &kp J                    &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
+  &hrm_left TAB A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G                       &kp M                    &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
+  &kp Z            &kp X              &kp C                 &kp D                 &kp V                       &kp K                    &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
+                                                            &mt LEFT_SHIFT SPACE  &mt LA(LC(LEFT_GUI)) ESC    &mt RA(RIGHT_GUI) ENTER  &mo_tog 1 6
             >;
         };
 
         Symbols {
             bindings = <
   &kp TILDE  &kp EXCL                      &kp AT                    &kp HASH                             &kp DLLR                &kp PRCNT         &kp CARET                               &kp AMPERSAND               &kp ASTRK                     &kp DEL
-  &kp MINUS  &hrm_left LEFT_CONTROL UNDER  &hrm_left LEFT_ALT EQUAL  &hrm_left LEFT_GUI LEFT_PARENTHESIS  &kp LEFT_BRACE          &kp RIGHT_BRACE   &hrm_right RIGHT_GUI RIGHT_PARENTHESIS  &hrm_right RIGHT_ALT COLON  &hrm_right RIGHT_CONTROL DQT  &kp SEMI
-  &kp PLUS   &kp GRAVE                     &kp SQT                   &kp LBKT                             &kp BSLH                &kp PIPE          &kp RBKT                                &kp LT                      &kp GT                        &kp QMARK
+  &kp SQT    &hrm_left LEFT_CONTROL UNDER  &hrm_left LEFT_ALT EQUAL  &hrm_left LEFT_GUI LEFT_PARENTHESIS  &kp LEFT_BRACE          &kp RIGHT_BRACE   &hrm_right RIGHT_GUI RIGHT_PARENTHESIS  &hrm_right RIGHT_ALT COLON  &hrm_right RIGHT_CONTROL DQT  &kp SEMI
+  &kp PLUS   &kp MINUS                     &kp GRAVE                 &kp LBKT                             &kp BSLH                &kp PIPE          &kp RBKT                                &kp LT                      &kp GT                        &kp QMARK
                                                                      &mo_tog 2 2                          &mt LS(LEFT_ALT) ESC    &mt RSHIFT ENTER  &to 0
             >;
         };
