@@ -151,27 +151,27 @@
 
         Mouse {
             bindings = <
-  &mt LG(W) LG(Q)  &kp LC(LA(D))  &kp PAGE_DOWN     &msc MOVE_Y(-16) &msc MOVE_X(16)   &kp DOWN       &kp RIGHT           &mmv MOVE_UP     &kp LC(LG(F))    &mt DEL BACKSPACE
+  &mt LG(W) LG(Q)  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_Y(-16)  &msc MOVE_X(16)     &kp DOWN       &kp RIGHT           &mmv MOVE_UP     &kp LC(LG(F))    &mt DEL BACKSPACE
   &mo 5            &mo 4          &mkp RCLK      &mkp LCLK         &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_LEFT      &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp LC(LA(C))
-  &kp LA(LC(Z))    &kp LA(LC(E))  &kp PAGE_UP      &msc MOVE_Y(16)  &msc MOVE_X(-16)   &kp UP         &kp LEFT            &kp LA(LS(TAB))  &kp LA(TAB)      &kp LA(LC(ENTER))
+  &kp LA(LC(Z))    &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_Y(16)   &msc MOVE_X(-16)    &kp UP         &kp LEFT            &kp LA(LS(TAB))  &kp LA(TAB)      &kp LA(LC(ENTER))
                                                  &to 0             &mt LEFT_GUI ESC    &kp ENTER      &kp_tog LEFT_ALT 6
             >;
         };
 
         Fast {
             bindings = <
-  &mt LG(W) LG(Q)  &kp LC(LA(D))  &kp PAGE_DOWN     &msc MOVE_Y(-40) &msc MOVE_X(40)   &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-5000)  &kp LC(LG(F))      &mt DEL BACKSPACE
+  &mt LG(W) LG(Q)  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_Y(-40)  &msc MOVE_X(40)     &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-5000)  &kp LC(LG(F))      &mt DEL BACKSPACE
   &mo 5            &mo 4          &mkp RCLK      &mkp LCLK         &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-5000)  &mmv MOVE_Y(5000)   &mmv MOVE_X(5000)  &kp LC(LA(C))
-  &kp LA(LC(Z))    &kp LA(LC(E))  &kp PAGE_UP      &msc MOVE_Y(40) &msc MOVE_X(-40)    &kp UP         &kp LEFT            &kp LA(LS(TAB))     &kp LA(TAB)        &kp LA(LC(ENTER))
+  &kp LA(LC(Z))    &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_Y(40)   &msc MOVE_X(-40)    &kp UP         &kp LEFT            &kp LA(LS(TAB))     &kp LA(TAB)        &kp LA(LC(ENTER))
                                                  &to 0             &mt LEFT_GUI ESC    &kp ENTER      &kp_tog LEFT_ALT 6
             >;
         };
 
         Slow {
             bindings = <
-  &mt LG(W) LG(Q)  &kp LC(LA(D))  &kp PAGE_DOWN     &msc MOVE_Y(-4)  &msc MOVE_X(4)   &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-400)  &kp LC(LG(F))     &mt DEL BACKSPACE
+  &mt LG(W) LG(Q)  &kp LC(LA(D))  &kp PAGE_DOWN  &msc MOVE_Y(-4)  &msc MOVE_X(4)      &kp DOWN       &kp RIGHT           &mmv MOVE_Y(-400)  &kp LC(LG(F))     &mt DEL BACKSPACE
   &mo 5            &mo 4          &mkp RCLK      &mkp LCLK        &kp LA(LC(H))       &kp LA(LC(L))  &mmv MOVE_X(-400)   &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &kp LC(LA(C))
-  &kp LA(LC(Z))    &kp LA(LC(E))  &kp PAGE_UP     &msc MOVE_Y(4)   &msc MOVE_X(-4)    &kp UP         &kp LEFT            &kp LA(LS(TAB))    &kp LA(TAB)       &kp LA(LC(ENTER))
+  &kp LA(LC(Z))    &kp LA(LC(E))  &kp PAGE_UP    &msc MOVE_Y(4)   &msc MOVE_X(-4)     &kp UP         &kp LEFT            &kp LA(LS(TAB))    &kp LA(TAB)       &kp LA(LC(ENTER))
                                                  &to 0            &mt LEFT_GUI ESC    &kp ENTER      &kp_tog LEFT_ALT 6
             >;
         };
@@ -180,7 +180,7 @@
             bindings = <
   &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none               &none       &kp LG(LEFT)  &kp LG(RIGHT)  &none         &caps_word
   &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &none       &kp LA(LEFT)  &kp LA(RIGHT)  &none         &kp CLCK
-  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &none
+  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_CLR_ALL
                                          &to 0          &mt LEFT_GUI ESC    &kp ENTER   &to 3
             >;
         };
