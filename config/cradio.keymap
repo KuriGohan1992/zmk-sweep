@@ -108,6 +108,11 @@
             bindings = <&to 0>;
             key-positions = <30 33>;
         };
+
+        ggst {
+            bindings = <&none>;
+            key-positions = <14 13 12>;
+        };
     };
 
     macros {
@@ -116,6 +121,13 @@
             #binding-cells = <0>;
             bindings = <&kp N0 &kp N8 &kp N2 &kp N9 &kp N2 &kp N4 &kp ENTER>;
             label = "PASSWORD";
+        };
+
+        elphelt_ult_left: elphelt_ult {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp S &kp A &kp D &kp K>;
+            label = "ELPHELT_ULT";
         };
     };
 
@@ -191,6 +203,15 @@
   &kp A  &kp S  &kp D  &kp F                 &kp G                           &kp H                    &kp J        &kp K      &kp L    &kp BACKSPACE
   &kp Z  &kp X  &kp C  &kp V                 &kp B                           &kp N                    &kp M        &kp COMMA  &kp DOT  &kp FSLH
                        &mt LEFT_SHIFT SPACE  &mt LS(LA(LC(LEFT_GUI))) ESC    &mt RIGHT_CONTROL ENTER  &mo_tog 1 6
+            >;
+        };
+
+        GGST {
+            bindings = <
+  &trans  &trans  &kp W   &trans  &trans    &trans             &kp U   &kp I   &kp O   &trans
+  &trans  &kp A   &kp S   &kp D   &trans    &elphelt_ult_left  &kp J   &kp K   &kp L   &trans
+  &trans  &trans  &trans  &trans  &trans    &trans             &trans  &trans  &trans  &trans
+                          &trans  &trans    &trans             &trans
             >;
         };
     };
