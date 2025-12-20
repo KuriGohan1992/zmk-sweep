@@ -208,10 +208,10 @@
 
         GGST {
             bindings = <
-  &trans  &trans  &kp W   &trans  &trans    &trans             &kp U   &kp I   &kp O   &trans
-  &trans  &kp A   &kp S   &kp D   &trans    &elphelt_ult_left  &kp J   &kp K   &kp L   &trans
-  &trans  &trans  &trans  &trans  &trans    &trans             &trans  &trans  &trans  &trans
-                          &trans  &trans    &trans             &trans
+  &none  &none  &kp W  &none  &none    &none              &none  &none  &none  &none
+  &none  &kp A  &kp S  &kp D  &none    &none              &kp U  &kp I  &kp O  &none
+  &none  &none  &none  &none  &none    &elphelt_ult_left  &kp J  &kp K  &kp L  &none
+                       &none  &none    &none              &none
             >;
         };
     };
