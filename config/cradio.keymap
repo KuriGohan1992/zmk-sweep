@@ -208,19 +208,19 @@
 
         GGST_arrow {
             bindings = <
-  &none              &none     &kp UP    &kp U      &none    &none  &none  &none  &none    &none
-  &kp RIGHT_BRACKET  &kp LEFT  &kp DOWN  &kp RIGHT  &none    &kp BACKSPACE     &kp INSERT     &kp HOME     &kp PAGE_UP          &none
-  &none              &kp X     &kp C     &none      &none    &kp BSLH          &kp DEL    &kp END   &kp PAGE_DOWN  &none
-                                         &kp LBKT   &to 9    &kp ENTER      &kp N0
+  &none     &none  &kp BSPC  &kp LEFT   &none     &none      &none       &none     &none          &none
+  &none     &none  &kp X     &kp DOWN   &kp UP    &kp BSLH   &kp INSERT  &kp HOME  &kp PAGE_UP    &none
+  &kp BSLH  &none  &kp C     &kp RIGHT  &kp U     &kp RBKT   &kp DEL     &kp END   &kp PAGE_DOWN  &none
+                             &to 9      &none     &kp ENTER  &kp N0
             >;
         };
 
         GGST_wasd {
             bindings = <
-  &none              &none     &kp W    &kp U      &none    &none  &none  &none  &none    &none
-  &kp RIGHT_BRACKET  &kp A  &kp S  &kp D  &none    &kp BACKSPACE       &kp INSERT     &kp HOME     &kp PAGE_UP          &none
-  &none              &kp X     &kp C     &none      &none    &kp BSLH          &kp DEL    &kp END   &kp PAGE_DOWN  &none
-                                         &kp LBKT   &to 8    &kp ENTER      &kp N0
+  &none     &none  &kp BSPC  &kp A  &none    &none      &none       &none     &none          &none
+  &none     &none  &kp X     &kp S  &kp W    &kp BSLH   &kp INSERT  &kp HOME  &kp PAGE_UP    &none
+  &kp BSLH  &none  &kp C     &kp D  &kp U    &kp RBKT   &kp DEL     &kp END   &kp PAGE_DOWN  &none
+                             &to 8  &none    &kp ENTER  &kp N0
             >;
         };
     };
