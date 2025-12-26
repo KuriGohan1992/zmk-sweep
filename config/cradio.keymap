@@ -88,13 +88,13 @@
 
         Bootloader {
             bindings = <&bootloader>;
-            key-positions = <4 6>;
+            key-positions = <4 6 31>;
             layers = <0>;
         };
 
         Password {
             bindings = <&pw>;
-            key-positions = <3 1>;
+            key-positions = <3 1 31>;
             layers = <0>;
             require-prior-idle-ms = <0>;
         };
@@ -112,6 +112,11 @@
         ggst {
             bindings = <&to 8>;
             key-positions = <14 13 12>;
+        };
+
+        old_ggst {
+            bindings = <&none>;
+            key-positions = <14 13 12 31>;
         };
     };
 
