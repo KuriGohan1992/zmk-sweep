@@ -204,10 +204,10 @@
 
         QWERTY {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R       &kp T                         &kp Y                  &kp U        &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F       &kp G                         &kp H                  &kp J        &kp K      &kp L    &kp BACKSPACE
-  &kp Z  &kp X  &kp C  &kp V       &kp B                         &kp N                  &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                       &kp ESCAPE  &mt LA(LC(LEFT_GUI)) SPACE    &mt RIGHT_SHIFT ENTER  &mo_tog 1 6
+  &hrm_left TAB Q  &kp W                     &kp E                 &kp R                 &kp T                       &kp Y                  &kp U                   &kp I                   &kp O                       &kp P
+  &kp A            &hrm_left LEFT_CONTROL S  &hrm_left LEFT_ALT D  &hrm_left LEFT_GUI F  &kp G                       &kp H                  &hrm_right RIGHT_GUI J  &hrm_right RIGHT_ALT K  &hrm_right RIGHT_CONTROL L  &kp BACKSPACE
+  &kp Z            &kp X                     &kp C                 &kp V                 &kp B                       &kp N                  &kp M                   &kp COMMA               &kp DOT                     &kp FSLH
+                                                                   &kp SPACE             &mt LA(LC(LEFT_GUI)) ESC    &mt RIGHT_SHIFT ENTER  &mo_tog 1 6
             >;
         };
 
