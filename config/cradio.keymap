@@ -134,6 +134,34 @@
             bindings = <&kp D &kp S &kp A &kp D &kp K>;
             label = "ELPHELT_ULT";
         };
+
+        faith_wifi: faith_wifi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2 &kp TAB &kp LS(M) &kp E &kp N &kp D &kp E &kp Z &kp N0 &kp N9 &kp N0 &kp N5>;
+            label = "FAITH_WIFI";
+        };
+
+        student_email: student_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2 &kp AT &kp F &kp I &kp R &kp S &kp T &kp A &kp S &kp I &kp A &kp DOT &kp E &kp D &kp U &kp DOT &kp P &kp H>;
+            label = "STUDENT_EMAIL";
+        };
+
+        student_number: student_number {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2>;
+            label = "STUDENT_NUMBER";
+        };
+
+        personal_email: personal_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp H &kp A &kp M &kp M &kp E &kp N &kp D &kp E &kp Z &kp N9 &kp N2 &kp N9 &kp N0 &kp N5 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "PERSONAL_EMAIL";
+        };
     };
 
     keymap {
@@ -195,10 +223,10 @@
 
         Special {
             bindings = <
-  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none               &none       &kp LG(LEFT)  &kp LG(RIGHT)  &none         &caps_word
-  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &none       &kp LA(LEFT)  &kp LA(RIGHT)  &none         &kp CLCK
-  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &none
-                                         &to 0          &mt LEFT_GUI ESC    &kp ENTER   &to 3
+  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &none               &student_email   &kp LG(LEFT)  &kp LG(RIGHT)  &faith_wifi      &caps_word
+  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &student_number  &kp LA(LEFT)  &kp LA(RIGHT)  &personal_email  &kp CLCK
+  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2     &none
+                                         &to 0          &mt LEFT_GUI ESC    &kp ENTER        &to 3
             >;
         };
 
