@@ -200,7 +200,7 @@
   &kp TILDE  &kp EXCL                      &kp AT                    &kp HASH                             &kp DLLR                &kp PRCNT         &kp CARET                               &kp AMPERSAND               &kp ASTRK                     &kp DEL
   &kp SQT    &hrm_left LEFT_CONTROL UNDER  &hrm_left LEFT_ALT EQUAL  &hrm_left LEFT_GUI LEFT_PARENTHESIS  &kp LEFT_BRACE          &kp RIGHT_BRACE   &hrm_right RIGHT_GUI RIGHT_PARENTHESIS  &hrm_right RIGHT_ALT COLON  &hrm_right RIGHT_CONTROL DQT  &kp SEMI
   &kp PLUS   &kp MINUS                     &kp GRAVE                 &kp LBKT                             &kp BSLH                &kp PIPE          &kp RBKT                                &kp LT                      &kp GT                        &kp QMARK
-                                                                     &mo_tog 2 2                          &mt LS(LEFT_ALT) ESC    &mt RSHIFT ENTER  &kp SPACE
+                                                                     &mo_tog 2 2                          &mt LS(LEFT_ALT) ESC    &mt RSHIFT ENTER  &to 3
             >;
         };
 
