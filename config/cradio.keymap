@@ -179,6 +179,15 @@
             bindings = <&kp LS(S) &kp T &kp E &kp I &kp N &kp S &kp SEMI &kp LS(G) &kp A &kp T &kp E &kp N2 &kp N0 &kp N1 &kp N0>;
             label = "STEIN";
         };
+
+        for_fun: for_fun {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp E &kp N &kp U &kp M &kp B &kp E &kp D &kp N &kp E &kp S &kp S &kp SPACE &kp M &kp U &kp S &kp I &kp C &kp I &kp A &kp N &kp A &kp SPACE &kp R &kp E &kp T &kp R &kp A &kp I &kp N &kp I &kp N &kp G &kp SPACE &kp P &kp I &kp N &kp T &kp A &kp I &kp L &kp E &kp D &kp SPACE &kp M &kp I &kp C &kp R &kp O &kp C &kp A &kp L &kp T &kp R &kp O &kp P &kp SPACE &kp R &kp A &kp N &kp U &kp L &kp A &kp SPACE &kp M &kp E &kp T &kp E &kp O &kp R &kp I &kp T &kp E &kp SPACE &kp M &kp O &kp I &kp E &kp S &kp T &kp SPACE &kp P &kp L &kp U &kp G &kp U &kp G &kp L &kp Y &kp SPACE &kp I &kp N>;
+            label = "FOR_FUN";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
     };
 
     keymap {
