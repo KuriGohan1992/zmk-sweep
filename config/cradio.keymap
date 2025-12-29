@@ -157,8 +157,8 @@
             key-positions = <20 21>;
         };
 
-        alt_tab {
-            bindings = <&kp LG(TAB)>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <0 1>;
         };
     };
@@ -252,10 +252,10 @@
 
         Base {
             bindings = <
-  &hrm_left TAB Q  &kp W              &kp F                 &kp P                 &kp B                       &kp J             &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
-  &kp A            &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G                       &kp M             &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
-  &kp Z            &kp X              &kp C                 &kp D                 &kp V                       &kp K             &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
-                                                            &kp SPACE             &mt LA(LC(LEFT_GUI)) ESC    &mt RSHIFT ENTER  &mo_tog 1 6
+  &kp Q  &kp W              &kp F                 &kp P                 &kp B                       &kp J             &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
+  &kp A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G                       &kp M             &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
+  &kp Z  &kp X              &kp C                 &kp D                 &kp V                       &kp K             &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
+                                                  &kp SPACE             &mt LA(LC(LEFT_GUI)) ESC    &mt RSHIFT ENTER  &mo_tog 1 6
             >;
         };
 
@@ -315,10 +315,10 @@
 
         QWERTY {
             bindings = <
-  &hrm_left TAB Q  &kp W                     &kp E                 &kp R                 &kp T                       &kp Y                  &kp U                   &kp I                   &kp O                       &kp P
-  &kp A            &hrm_left LEFT_CONTROL S  &hrm_left LEFT_ALT D  &hrm_left LEFT_GUI F  &kp G                       &kp H                  &hrm_right RIGHT_GUI J  &hrm_right RIGHT_ALT K  &hrm_right RIGHT_CONTROL L  &kp BACKSPACE
-  &kp Z            &kp X                     &kp C                 &kp V                 &kp B                       &kp N                  &kp M                   &kp COMMA               &kp DOT                     &kp FSLH
-                                                                   &kp SPACE             &mt LA(LC(LEFT_GUI)) ESC    &mt RIGHT_SHIFT ENTER  &mo_tog 1 6
+  &kp Q  &kp W                     &kp E                 &kp R                 &kp T                       &kp Y                  &kp U                   &kp I                   &kp O                       &kp P
+  &kp A  &hrm_left LEFT_CONTROL S  &hrm_left LEFT_ALT D  &hrm_left LEFT_GUI F  &kp G                       &kp H                  &hrm_right RIGHT_GUI J  &hrm_right RIGHT_ALT K  &hrm_right RIGHT_CONTROL L  &kp BACKSPACE
+  &kp Z  &kp X                     &kp C                 &kp V                 &kp B                       &kp N                  &kp M                   &kp COMMA               &kp DOT                     &kp FSLH
+                                                         &kp SPACE             &mt LA(LC(LEFT_GUI)) ESC    &mt RIGHT_SHIFT ENTER  &mo_tog 1 6
             >;
         };
 
