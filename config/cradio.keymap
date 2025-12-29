@@ -335,6 +335,33 @@
             wait-ms = <1>;
             tap-ms = <1>;
         };
+
+        vs_code: vs_code {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp V &kp S &kp RET>;
+            label = "VS_CODE";
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+
+        notes: notes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp N &kp O &kp RET>;
+            label = "NOTES";
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+
+        cot_editor: cot_editor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp C &kp O &kp RET>;
+            label = "COT_EDITOR";
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
     };
 
     keymap {
@@ -403,9 +430,9 @@
             >;
         };
 
-        macros {
+        Macros {
             bindings = <
-  &kp LG(TAB)    &trans      &trans      &trans         &trans    &kp RG(DOWN)  &kp RG(LEFT)     &music          &kp RG(RIGHT)    &kp RG(UP)
+  &kp LG(TAB)    &notes      &vs_code    &cot_editor    &trans    &kp RG(DOWN)  &kp RG(LEFT)     &music          &kp RG(RIGHT)    &kp RG(UP)
   &color_picker  &ss_save    &ss_copy    &kp LC(LG(T))  &trans    &settings     &finder          &yazi           &zen             &kitty
   &trans         &kp LG(N1)  &kp LG(N2)  &kp LG(N5)     &trans    &faith_wifi   &student_number  &student_email  &personal_email  &stein
                                          &trans         &trans    &trans        &trans
