@@ -291,51 +291,6 @@
             tap-ms = <10>;
         };
 
-        play_pause: play_pause {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp SPACE &kp LG(TAB)>;
-            label = "PLAY_PAUSE";
-            wait-ms = <10>;
-            tap-ms = <10>;
-        };
-
-        vol_down: vol_down {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp LG(DOWN_ARROW) &kp LG(TAB)>;
-            label = "VOL_DOWN";
-            wait-ms = <10>;
-            tap-ms = <10>;
-        };
-
-        vol_up: vol_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp LG(UP_ARROW) &kp LG(TAB)>;
-            label = "VOL_UP";
-            wait-ms = <10>;
-            tap-ms = <10>;
-        };
-
-        prev_song: prev {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp LEFT_ARROW &kp LG(TAB)>;
-            label = "PREV";
-            wait-ms = <10>;
-            tap-ms = <10>;
-        };
-
-        next_song: next_song {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp RIGHT_ARROW &kp LG(TAB)>;
-            label = "NEXT_SONG";
-            wait-ms = <10>;
-            tap-ms = <10>;
-        };
-
         low_you: low_you {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -352,6 +307,33 @@
             label = "UP_YOU";
             wait-ms = <0>;
             tap-ms = <0>;
+        };
+
+        color_picker: color_picker {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N6) &to 3>;
+            label = "COLOR_PICKER";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        ss_copy: ss_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N4) &to 3>;
+            label = "SS_COPY";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        ss_save: ss_save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N3) &to 3>;
+            label = "SS_SAVE";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
@@ -414,19 +396,19 @@
 
         Special {
             bindings = <
-  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &bootloader         &student_email   &kp LG(LEFT)  &kp LG(RIGHT)  &faith_wifi      &none
-  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &kp LG(N6)          &student_number  &kp LA(LEFT)  &kp LA(RIGHT)  &personal_email  &kp CLCK
-  &kp RG(N1)  &kp LG(N2)  &kp LG(N3)     &kp LG(N4)     &kp LG(N5)          &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2     &stein
-                                         &to 0          &mt LEFT_GUI ESC    &kp ENTER        &to 3
+  &kp TAB     &kp LG(N0)  &kp LG(MINUS)  &kp LG(EQUAL)  &bootloader         &none       &kp LG(LEFT)  &kp LG(RIGHT)  &none         &none
+  &kp LSHIFT  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none               &none       &kp LA(LEFT)  &kp LA(RIGHT)  &none         &kp CLCK
+  &none       &kp LG(N1)  &kp LG(N2)     &kp LG(N5)     &none               &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &none
+                                         &to 0          &mt LEFT_GUI ESC    &kp ENTER   &to 3
             >;
         };
 
         macros {
             bindings = <
-  &trans  &prev_song  &play_pause  &next_song  &trans    &trans     &kp RG(DOWN)  &music  &kp RG(UP)  &trans
-  &trans  &trans      &trans       &trans      &trans    &settings  &finder       &yazi   &zen        &kitty
-  &trans  &trans      &trans       &trans      &trans    &trans     &trans        &trans  &trans      &trans
-                                   &trans      &trans    &trans     &trans
+  &kp LG(TAB)  &trans         &trans      &trans      &trans    &kp RG(DOWN)  &kp RG(LEFT)     &music          &kp RG(RIGHT)    &kp RG(UP)
+  &trans       &color_picker  &ss_save    &ss_copy    &trans    &settings     &finder          &yazi           &zen             &kitty
+  &trans       &kp LG(N1)     &kp LG(N2)  &kp LG(N5)  &trans    &faith_wifi   &student_number  &student_email  &personal_email  &stein
+                                          &trans      &trans    &trans        &trans
             >;
         };
 
