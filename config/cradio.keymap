@@ -97,15 +97,18 @@
 
         Bootloader {
             bindings = <&bootloader>;
-            key-positions = <4 6 31>;
+            key-positions = <4 6>;
             layers = <0>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <500>;
         };
 
         Password {
             bindings = <&pw>;
-            key-positions = <3 1 31>;
+            key-positions = <3 1>;
             layers = <0>;
-            require-prior-idle-ms = <0>;
+            require-prior-idle-ms = <500>;
+            timeout-ms = <40>;
         };
 
         qwerty {
@@ -292,7 +295,7 @@
         select_line: select_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp HOME &kp LS(END)>;
+            bindings = <&kp LG(LEFT_ARROW) &kp LS(END)>;
             label = "SELECT_LINE";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -301,46 +304,46 @@
         kitty: kitty {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp K &kp I &kp T &kp T &kp Y &kp RET>;
+            bindings = <&kp LG(SPACE) &kp K &kp I &kp RET>;
             label = "KITTY";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         zen: zen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp Z &kp E &kp N &kp RET>;
+            bindings = <&kp LG(SPACE) &kp Z &kp E &kp RET>;
             label = "ZEN";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         yazi: yazi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp Y &kp A &kp Z &kp I &kp RET>;
+            bindings = <&kp LG(SPACE) &kp Y &kp A &kp RET>;
             label = "YAZI";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         finder: finder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp F &kp I &kp N &kp D &kp E &kp R &kp RET>;
+            bindings = <&kp LG(SPACE) &kp F &kp I &kp RET>;
             label = "FINDER";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         settings: settings {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp S &kp E &kp T &kp T &kp I &kp N &kp G &kp S &kp RET>;
+            bindings = <&kp LG(SPACE) &kp S &kp Y &kp RET>;
             label = "SETTINGS";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         music: music {
@@ -348,8 +351,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET>;
             label = "MUSIC";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         play_pause: play_pause {
@@ -357,8 +360,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp SPACE &kp LG(TAB)>;
             label = "PLAY_PAUSE";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         vol_down: vol_down {
@@ -366,8 +369,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp LG(DOWN_ARROW) &kp LG(TAB)>;
             label = "VOL_DOWN";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         vol_up: vol_up {
@@ -375,8 +378,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp LG(UP_ARROW) &kp LG(TAB)>;
             label = "VOL_UP";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         prev_song: prev {
@@ -384,8 +387,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp LEFT_ARROW &kp LG(TAB)>;
             label = "PREV";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         next_song: next_song {
@@ -393,8 +396,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp RIGHT_ARROW &kp LG(TAB)>;
             label = "NEXT_SONG";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         low_you: low_you {
@@ -402,8 +405,8 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp O &kp U>;
             label = "LOW_YOU";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         up_you: up_you {
@@ -411,8 +414,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(Y) &kp O &kp U>;
             label = "UP_YOU";
-            wait-ms = <0>;
-            tap-ms = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
