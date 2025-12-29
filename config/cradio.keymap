@@ -156,6 +156,11 @@
             bindings = <&select_line>;
             key-positions = <20 21>;
         };
+
+        alt_tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
