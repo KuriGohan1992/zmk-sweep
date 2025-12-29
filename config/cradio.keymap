@@ -141,7 +141,7 @@
         };
 
         You {
-            bindings = <&You>;
+            bindings = <&capital_you>;
             key-positions = <8 7 32>;
             layers = <0>;
         };
@@ -300,7 +300,7 @@
             tap-ms = <0>;
         };
 
-        You: You {
+        capital_you: You {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(Y) &kp O &kp U>;
