@@ -151,6 +151,11 @@
             key-positions = <27 26>;
             layers = <0 7>;
         };
+
+        select_line {
+            bindings = <&select_line>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
@@ -227,6 +232,13 @@
             #binding-cells = <0>;
             bindings = <&kp LS(Y) &kp O &kp U>;
             label = "YOU";
+        };
+
+        select_line: select_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(END)>;
+            label = "SELECT_LINE";
         };
     };
 
