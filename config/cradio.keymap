@@ -308,8 +308,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp K &kp I &kp RET>;
             label = "KITTY";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         zen: zen {
@@ -317,8 +317,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp Z &kp E &kp RET>;
             label = "ZEN";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         yazi: yazi {
@@ -326,8 +326,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp Y &kp A &kp RET>;
             label = "YAZI";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         finder: finder {
@@ -335,8 +335,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp F &kp I &kp RET>;
             label = "FINDER";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         settings: settings {
@@ -344,8 +344,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp S &kp Y &kp RET>;
             label = "SETTINGS";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         music: music {
@@ -353,8 +353,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET>;
             label = "MUSIC";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         play_pause: play_pause {
@@ -362,8 +362,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp SPACE &kp LG(TAB)>;
             label = "PLAY_PAUSE";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         vol_down: vol_down {
@@ -371,8 +371,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp LG(DOWN_ARROW) &kp LG(TAB)>;
             label = "VOL_DOWN";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         vol_up: vol_up {
@@ -380,8 +380,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp LG(UP_ARROW) &kp LG(TAB)>;
             label = "VOL_UP";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         prev_song: prev {
@@ -389,8 +389,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp LEFT_ARROW &kp LG(TAB)>;
             label = "PREV";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         next_song: next_song {
@@ -398,8 +398,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET &kp RIGHT_ARROW &kp LG(TAB)>;
             label = "NEXT_SONG";
-            wait-ms = <1>;
-            tap-ms = <1>;
+           // wait-ms = <10>;
+           // tap-ms = <10>;
         };
 
         low_you: low_you {
