@@ -267,7 +267,7 @@
         finder: finder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE) &kp F &kp I &kp RET>;
+            bindings = <&kp LG(SPACE) &kp F &kp I &kp N &kp RET>;
             label = "FINDER";
             wait-ms = <10>;
             tap-ms = <10>;
