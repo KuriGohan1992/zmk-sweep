@@ -186,7 +186,7 @@
         faith_wifi: faith_wifi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2 &kp TAB &kp LS(M) &kp E &kp N &kp D &kp E &kp Z &kp N0 &kp N9 &kp N0 &kp N5>;
+            bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2 &kp TAB &kp LS(M) &kp E &kp N &kp D &kp E &kp Z &kp N0 &kp N9 &kp N0 &kp N5 &kp ENTER &kp LC(LG(T)) &kp C &kp W &kp RET>;
             label = "FAITH_WIFI";
             tap-ms = <0>;
             wait-ms = <0>;
