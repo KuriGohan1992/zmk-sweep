@@ -362,6 +362,24 @@
             wait-ms = <10>;
             tap-ms = <10>;
         };
+
+        next_song: next_song {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&music &kp LG(RIGHT) &kp LG(TAB)>;
+            label = "NEXT_SONG";
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+
+        prev_song: prev_song {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&music &kp LG(LEFT) &kp LG(TAB)>;
+            label = "PREV_SONG";
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
     };
 
     keymap {
@@ -432,7 +450,7 @@
 
         Macros {
             bindings = <
-  &kp LA(LC(LG(L)))  &notes      &vs_code    &cot_editor    &kp LA(LC(LG(S)))    &kp RG(DOWN)  &kp RG(LEFT)     &music          &kp RG(RIGHT)    &kp RG(UP)
+  &kp LA(LC(LG(L)))  &notes      &vs_code    &cot_editor    &kp LA(LC(LG(S)))    &kp RG(DOWN)  &prev_song       &music          &next_song       &kp RG(UP)
   &color_picker      &ss_save    &ss_copy    &kp LC(LG(T))  &kp LA(LC(LG(D)))    &settings     &finder          &yazi           &zen             &kitty
   &kp RG(RA(X))      &kp LG(N1)  &kp LG(N2)  &kp LG(N5)     &kp LA(LC(LG(R)))    &faith_wifi   &student_number  &student_email  &personal_email  &stein
                                              &trans         &trans               &trans        &trans
