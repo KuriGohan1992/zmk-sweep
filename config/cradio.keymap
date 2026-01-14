@@ -172,8 +172,8 @@
             #binding-cells = <0>;
             bindings = <&kp N0 &kp N8 &kp N2 &kp N9 &kp N2 &kp N4 &kp ENTER>;
             label = "PASSWORD";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         elphelt_ult_left: elphelt_ult {
@@ -188,8 +188,8 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2 &kp TAB &kp LS(M) &kp E &kp N &kp D &kp E &kp Z &kp N0 &kp N9 &kp N0 &kp N5 &kp ENTER &kp LC(LG(T)) &kp C &kp W &kp RET>;
             label = "FAITH_WIFI";
-            tap-ms = <30>;
-            wait-ms = <30>;
+            tap-ms = <10>;
+            wait-ms = <10>;
         };
 
         student_email: student_email {
@@ -197,8 +197,8 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2 &kp AT &kp F &kp I &kp R &kp S &kp T &kp A &kp S &kp I &kp A &kp DOT &kp E &kp D &kp U &kp DOT &kp P &kp H>;
             label = "STUDENT_EMAIL";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         student_number: student_number {
@@ -206,8 +206,8 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2>;
             label = "STUDENT_NUMBER";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         personal_email: personal_email {
@@ -215,8 +215,8 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp H &kp A &kp M &kp M &kp E &kp N &kp D &kp E &kp Z &kp N9 &kp N2 &kp N9 &kp N0 &kp N5 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "PERSONAL_EMAIL";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         stein: stein {
@@ -224,8 +224,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(S) &kp T &kp E &kp I &kp N &kp S &kp SEMI &kp LS(G) &kp A &kp T &kp E &kp N2 &kp N0 &kp N1 &kp N0>;
             label = "STEIN";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         select_line: select_line {
@@ -233,8 +233,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LEFT_ARROW) &kp LS(END)>;
             label = "SELECT_LINE";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         kitty: kitty {
@@ -242,8 +242,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp K &kp I &kp RET>;
             label = "KITTY";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         zen: zen {
@@ -251,8 +251,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp Z &kp E &kp RET>;
             label = "ZEN";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         yazi: yazi {
@@ -260,8 +260,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp Y &kp A &kp RET>;
             label = "YAZI";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         finder: finder {
@@ -269,8 +269,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp F &kp I &kp N &kp RET>;
             label = "FINDER";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         settings: settings {
@@ -278,8 +278,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp S &kp Y &kp RET>;
             label = "SETTINGS";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         music: music {
@@ -287,8 +287,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp M &kp U &kp RET>;
             label = "MUSIC";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         low_you: low_you {
@@ -296,8 +296,8 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp O &kp U>;
             label = "LOW_YOU";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         up_you: up_you {
@@ -305,8 +305,8 @@
             #binding-cells = <0>;
             bindings = <&kp LS(Y) &kp O &kp U>;
             label = "UP_YOU";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         color_picker: color_picker {
@@ -314,8 +314,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(N6) &to 3>;
             label = "COLOR_PICKER";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         ss_copy: ss_copy {
@@ -323,8 +323,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(N4) &to 3>;
             label = "SS_COPY";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         ss_save: ss_save {
@@ -332,8 +332,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(N3) &to 3>;
             label = "SS_SAVE";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         vs_code: vs_code {
@@ -341,8 +341,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp V &kp S &kp RET>;
             label = "VS_CODE";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         notes: notes {
@@ -350,8 +350,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp N &kp O &kp RET>;
             label = "NOTES";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         cot_editor: cot_editor {
@@ -359,8 +359,8 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE) &kp C &kp O &kp RET>;
             label = "COT_EDITOR";
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
     };
 
