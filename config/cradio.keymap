@@ -434,7 +434,7 @@
             bindings = <
   &kp LA(LC(LG(L)))  &notes      &vs_code    &cot_editor    &kp LA(LC(LG(S)))    &kp RG(DOWN)  &kp RG(LEFT)     &music          &kp RG(RIGHT)    &kp RG(UP)
   &color_picker      &ss_save    &ss_copy    &kp LC(LG(T))  &kp LA(LC(LG(D)))    &settings     &finder          &yazi           &zen             &kitty
-  &trans             &kp LG(N1)  &kp LG(N2)  &kp LG(N5)     &kp LA(LC(LG(R)))    &faith_wifi   &student_number  &student_email  &personal_email  &stein
+  &kp RG(RA(X))      &kp LG(N1)  &kp LG(N2)  &kp LG(N5)     &kp LA(LC(LG(R)))    &faith_wifi   &student_number  &student_email  &personal_email  &stein
                                              &trans         &trans               &trans        &trans
             >;
         };
