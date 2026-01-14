@@ -368,8 +368,8 @@
             #binding-cells = <0>;
             bindings = <&music &kp LG(RIGHT) &kp LG(TAB)>;
             label = "NEXT_SONG";
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
 
         prev_song: prev_song {
@@ -377,8 +377,8 @@
             #binding-cells = <0>;
             bindings = <&music &kp LG(LEFT) &kp LG(TAB)>;
             label = "PREV_SONG";
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
     };
 
