@@ -441,10 +441,10 @@
 
         Special {
             bindings = <
-  &kp TAB     &kp LG(MINUS)      &kp LG(N0)  &kp LG(EQUAL)  &bootloader         &none       &kp LG(LEFT)  &none         &kp LG(RIGHT)  &none
-  &kp LSHIFT  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOL_UP   &none               &none       &kp LA(LEFT)  &none         &kp LG(RIGHT)  &kp CLCK
-  &none       &kp LG(N1)         &kp LG(N2)  &kp LG(N5)     &none               &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &none
-                                             &to 0          &mt LEFT_GUI ESC    &kp ENTER   &to 3
+  &kp TAB     &kp LG(MINUS)           &kp LG(N0)  &kp LG(EQUAL)            &bootloader         &none       &kp LG(LEFT)  &none         &kp LG(RIGHT)  &none
+  &kp LSHIFT  &kp C_VOLUME_DOWN       &kp K_MUTE  &kp C_VOL_UP             &none               &none       &kp LA(LEFT)  &none         &kp LG(RIGHT)  &kp CLCK
+  &none       &kp RS(RC(LEFT_ARROW))  &none       &kp RC(RS(RIGHT_ARROW))  &none               &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &none
+                                                  &to 0                    &mt LEFT_GUI ESC    &kp ENTER   &to 3
             >;
         };
 
