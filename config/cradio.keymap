@@ -380,6 +380,24 @@
             wait-ms = <30>;
             tap-ms = <30>;
         };
+
+        mendez_charl: mendez_charl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp E &kp N &kp D &kp E &kp Z &kp COMMA &kp SPACE &kp LS(C) &kp H &kp A &kp R &kp L &kp SPACE &kp LS(E) &kp M &kp M &kp A &kp N &kp U &kp E &kp L &kp SPACE &kp LS(E) &kp DOT>;
+            label = "MENDEZ_CHARL";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
+
+        charl_mendez: charl_mendez {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(C) &kp H &kp A &kp R &kp L &kp SPACE &kp LS(E) &kp M &kp M &kp A &kp N &kp U &kp E &kp L &kp SPACE &kp LS(E) &kp DOT &kp SPACE &kp LS(M) &kp E &kp N &kp D &kp E &kp Z>;
+            label = "CHARL_MENDEZ";
+            wait-ms = <1>;
+            tap-ms = <1>;
+        };
     };
 
     keymap {
@@ -450,10 +468,10 @@
 
         Macros {
             bindings = <
-  &kp LA(LC(LG(L)))  &notes      &vs_code    &cot_editor    &kp LA(LC(LG(S)))    &kp RG(DOWN)  &prev_song       &music          &next_song       &kp RG(UP)
-  &color_picker      &ss_save    &ss_copy    &kp LC(LG(T))  &kp LA(LC(LG(D)))    &settings     &finder          &yazi           &zen             &kitty
-  &kp RG(RA(X))      &kp LG(N1)  &kp LG(N2)  &kp LG(N5)     &kp LA(LC(LG(R)))    &faith_wifi   &student_number  &student_email  &personal_email  &stein
-                                             &trans         &trans               &trans        &trans
+  &kp LA(LC(LG(L)))  &notes      &vs_code    &cot_editor    &kp LA(LC(LG(S)))    &kp RG(DOWN)   &prev_song       &music          &next_song       &kp RG(UP)
+  &color_picker      &ss_save    &ss_copy    &kp LC(LG(T))  &kp LA(LC(LG(D)))    &settings      &finder          &yazi           &zen             &kitty
+  &kp RG(RA(X))      &kp LG(N1)  &kp LG(N2)  &kp LG(N5)     &kp LA(LC(LG(R)))    &faith_wifi    &student_number  &student_email  &personal_email  &stein
+                                             &kp SPACE      &kp LG(BACKSPACE)    &mendez_charl  &charl_mendez
             >;
         };
 
