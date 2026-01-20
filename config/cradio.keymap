@@ -141,7 +141,7 @@
 
         select_line {
             bindings = <&select_line>;
-            key-positions = <20 21>;
+            key-positions = <24 23>;
             layers = <0 8>;
         };
 
@@ -191,6 +191,24 @@
             bindings = <&bt BT_CLR>;
             key-positions = <25 5>;
             layers = <6>;
+        };
+
+        cut {
+            bindings = <&kp RG(X)>;
+            key-positions = <21 20>;
+            layers = <0>;
+        };
+
+        copy {
+            bindings = <&kp RG(C)>;
+            key-positions = <22 21>;
+            layers = <0>;
+        };
+
+        paste {
+            bindings = <&kp RG(V)>;
+            key-positions = <23 22>;
+            layers = <0>;
         };
     };
 
