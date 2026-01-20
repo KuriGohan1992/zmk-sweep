@@ -192,30 +192,6 @@
             key-positions = <25 5>;
             layers = <6>;
         };
-
-        cut {
-            bindings = <&kp RG(X)>;
-            key-positions = <20 21>;
-            layers = <0 8>;
-        };
-
-        copy {
-            bindings = <&kp RG(C)>;
-            key-positions = <21 22>;
-            layers = <0 8>;
-        };
-
-        paste {
-            bindings = <&kp RG(V)>;
-            key-positions = <22 23>;
-            layers = <0 8>;
-        };
-
-        select_all {
-            bindings = <&kp RG(A)>;
-            key-positions = <23 24>;
-            layers = <0 8>;
-        };
     };
 
     macros {
@@ -238,7 +214,7 @@
         faith_wifi: faith_wifi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2 &kp TAB &kp LS(M) &kp E &kp N &kp D &kp E &kp Z &kp N0 &kp N9 &kp N0 &kp N5 &kp ENTER &kp LC(LG(T)) &kp C &kp W &kp RET>;
+            bindings = <&kp S &kp N2 &kp N0 &kp N2 &kp N3 &kp N1 &kp N0 &kp N0 &kp N6 &kp N0 &kp N2 &kp TAB &kp LS(M) &kp E &kp N &kp D &kp E &kp Z &kp N0 &kp N9 &kp N0 &kp N5 &kp ENTER>;
             label = "FAITH_WIFI";
             tap-ms = <1>;
             wait-ms = <1>;
