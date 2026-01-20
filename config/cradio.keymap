@@ -124,11 +124,7 @@
         ggst {
             bindings = <&to 9>;
             key-positions = <14 13 12>;
-        };
-
-        old_ggst {
-            bindings = <&to 11>;
-            key-positions = <14 13 12 31>;
+            layers = <0>;
         };
 
         numbers {
@@ -146,11 +142,13 @@
         select_line {
             bindings = <&select_line>;
             key-positions = <20 21>;
+            layers = <0 8>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
+            layers = <0 8>;
         };
 
         low_you {
@@ -510,37 +508,19 @@
 
         GGST_arrow {
             bindings = <
-  &kp RG(Q)  &none  &kp BSPC  &kp LEFT   &to 0     &kp BSLH   &kp INS        &none    &none     &none
+  &kp RG(Q)  &none  &kp BSPC  &kp LEFT   &to 0     &kp BSLH   &kp INS        &none    &none     &kp O
   &none      &none  &kp X     &kp DOWN   &kp UP    &kp RBKT   &kp DEL        &kp END  &kp HOME  &kp PAGE_UP
-  &kp LBKT   &none  &kp C     &kp RIGHT  &kp U     &none      &none          &none    &none     &none
+  &kp LBKT   &none  &kp C     &kp RIGHT  &kp U     &none      &kp K          &kp I    &kp L     &none
                               &to 10     &kp N0    &kp ENTER  &kp PAGE_DOWN
             >;
         };
 
         GGST_wasd {
             bindings = <
-  &kp RG(Q)  &none  &kp BSPC  &kp A  &to 0     &kp BSLH   &kp INS        &none    &none     &none
+  &kp RG(Q)  &none  &kp BSPC  &kp A  &to 0     &kp BSLH   &kp INS        &none    &none     &kp O
   &none      &none  &kp X     &kp S  &kp W     &kp RBKT   &kp DEL        &kp END  &kp HOME  &kp PAGE_UP
-  &kp LBKT   &none  &kp C     &kp D  &kp U     &none      &none          &none    &none     &none
+  &kp LBKT   &none  &kp C     &kp D  &kp U     &none      &kp K          &kp I    &kp L     &none
                               &to 9  &kp N0    &kp ENTER  &kp PAGE_DOWN
-            >;
-        };
-
-        deprecated_arrow {
-            bindings = <
-  &none     &none  &kp BSPC  &kp LEFT   &none     &none      &none       &none     &none          &none
-  &none     &none  &kp X     &kp DOWN   &kp UP    &kp BSLH   &kp INSERT  &kp HOME  &kp PAGE_UP    &none
-  &kp LBKT  &none  &kp C     &kp RIGHT  &kp U     &kp RBKT   &kp DEL     &kp END   &kp PAGE_DOWN  &none
-                             &to 12     &none     &kp ENTER  &kp N0
-            >;
-        };
-
-        deprecated_wasd {
-            bindings = <
-  &none     &none  &kp BSPC  &kp A   &none    &none      &none       &none     &none          &none
-  &none     &none  &kp X     &kp S   &kp W    &kp BSLH   &kp INSERT  &kp HOME  &kp PAGE_UP    &none
-  &kp LBKT  &none  &kp C     &kp D   &kp U    &kp RBKT   &kp DEL     &kp END   &kp PAGE_DOWN  &none
-                             &to 11  &none    &kp ENTER  &kp N0
             >;
         };
     };
