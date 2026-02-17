@@ -107,8 +107,6 @@
             bindings = <&pw>;
             key-positions = <3 1>;
             layers = <0>;
-            require-prior-idle-ms = <500>;
-            timeout-ms = <40>;
         };
 
         qwerty {
