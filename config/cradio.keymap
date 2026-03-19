@@ -208,6 +208,11 @@
             key-positions = <22 23>;
             layers = <0 8>;
         };
+
+        Brawlhalla {
+            bindings = <&to 11>;
+            key-positions = <15 16 17>;
+        };
     };
 
     macros {
@@ -543,6 +548,15 @@
   &none      &none  &kp X     &kp S  &kp W     &kp RBKT   &kp DEL        &kp END  &kp HOME  &kp PAGE_UP
   &kp LBKT   &none  &kp C     &kp D  &kp U     &none      &kp K          &kp I    &kp L     &none
                               &to 9  &kp N0    &kp ENTER  &kp PAGE_DOWN
+            >;
+        };
+
+        Brawlhalla {
+            bindings = <
+  &kp N1  &kp N2  &kp N3  &kp N4     &trans    &trans  &kp RIGHT  &trans  &trans  &trans
+  &kp Z   &kp X   &kp C   &kp V      &trans    &kp UP  &kp DOWN   &trans  &trans  &trans
+  &trans  &trans  &trans  &trans     &trans    &trans  &kp LEFT   &trans  &trans  &trans
+                          &kp SPACE  &trans    &trans  &trans
             >;
         };
     };
