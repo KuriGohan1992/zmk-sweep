@@ -535,10 +535,10 @@
 
         GGST_arrow {
             bindings = <
-  &kp RG(Q)  &none  &kp BSPC  &kp LEFT   &to 0     &kp BSLH   &kp INS        &none    &none     &kp O
-  &none      &none  &kp X     &kp DOWN   &kp UP    &kp RBKT   &kp DEL        &kp END  &kp HOME  &kp PAGE_UP
-  &kp LBKT   &none  &kp C     &kp RIGHT  &kp U     &none      &kp K          &kp I    &kp L     &none
-                              &to 10     &kp N0    &kp ENTER  &kp PAGE_DOWN
+  &kp RG(Q)  &to 12  &kp BSPC  &kp LEFT   &to 0     &kp BSLH   &kp INS        &none    &none     &kp O
+  &none      &none   &kp X     &kp DOWN   &kp UP    &kp RBKT   &kp DEL        &kp END  &kp HOME  &kp PAGE_UP
+  &kp LBKT   &none   &kp C     &kp RIGHT  &kp U     &none      &kp K          &kp I    &kp L     &none
+                               &to 10     &kp N0    &kp ENTER  &kp PAGE_DOWN
             >;
         };
 
@@ -557,6 +557,15 @@
   &kp Z   &kp X   &kp C   &kp V      &trans    &kp UP  &kp DOWN   &trans  &trans  &trans
   &trans  &trans  &trans  &trans     &trans    &trans  &kp LEFT   &trans  &trans  &trans
                           &kp SPACE  &trans    &trans  &trans
+            >;
+        };
+
+        GGST_Online {
+            bindings = <
+  &kp RG(Q)  &none  &kp BSPC  &kp A  &to 0     &kp BSLH   &kp U          &none  &kp H  &kp L
+  &none      &none  &kp X     &kp S  &kp W     &kp RBKT   &kp J          &kp K  &kp I  &kp O
+  &kp LBKT   &none  &kp C     &kp D  &kp U     &none      &kp V          &kp B  &kp N  &kp M
+                              &to 9  &kp N0    &kp ENTER  &kp PAGE_DOWN
             >;
         };
     };
