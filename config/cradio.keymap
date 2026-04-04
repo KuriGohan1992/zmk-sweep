@@ -213,6 +213,18 @@
             bindings = <&to 11>;
             key-positions = <15 16 17>;
         };
+
+        ggst_online {
+            bindings = <&to 12>;
+            key-positions = <2 3 4>;
+            layers = <0>;
+        };
+
+        ggst_norm {
+            bindings = <&to 13>;
+            key-positions = <24 23 22>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -454,10 +466,10 @@
 
         Base {
             bindings = <
-  &kp Q  &kp W              &kp F                 &kp P                 &kp B           &kp J             &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
-  &kp A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G           &kp M             &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &kp O
-  &kp Z  &kp X              &kp C                 &kp D                 &kp V           &kp K             &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
-                                                  &kp SPACE             &mo_kp 2 ESC    &mt RSHIFT ENTER  &mo_tog 1 6
+  &kp Q                   &kp W              &kp F                 &kp P                 &kp B           &kp J             &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
+  &hrm_left LEFT_SHIFT A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G           &kp M             &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &hrm_right RIGHT_SHIFT O
+  &kp Z                   &kp X              &kp C                 &kp D                 &kp V           &kp K             &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
+                                                                   &kp SPACE             &mo_kp 2 ESC    &mt RSHIFT ENTER  &mo_tog 1 6
             >;
         };
 
@@ -535,16 +547,16 @@
 
         GGST_arrow {
             bindings = <
-  &kp RG(Q)  &to 12  &kp BSPC  &kp LEFT   &to 0     &kp BSLH   &kp INS        &none    &none     &kp O
-  &none      &none   &kp X     &kp DOWN   &kp UP    &kp RBKT   &kp DEL        &kp END  &kp HOME  &kp PAGE_UP
-  &kp LBKT   &none   &kp C     &kp RIGHT  &kp U     &none      &kp K          &kp I    &kp L     &none
-                               &to 10     &kp N0    &kp ENTER  &kp PAGE_DOWN
+  &kp RG(Q)  &none  &kp BSPC  &kp LEFT   &kp TILDE    &kp BSLH   &kp INS        &none    &none     &kp O
+  &none      &none  &kp X     &kp DOWN   &kp UP       &kp RBKT   &kp DEL        &kp END  &kp HOME  &kp PAGE_UP
+  &kp LBKT   &none  &kp C     &kp RIGHT  &kp U        &none      &kp K          &kp I    &kp L     &none
+                              &to 10     &kp N0       &kp ENTER  &kp PAGE_DOWN
             >;
         };
 
         GGST_wasd {
             bindings = <
-  &kp RG(Q)  &none  &kp BSPC  &kp A  &to 0     &kp BSLH   &kp INS        &none    &none     &kp O
+  &kp RG(Q)  &none  &kp BSPC  &kp A  &kp Q     &kp BSLH   &kp INS        &none    &none     &kp O
   &none      &none  &kp X     &kp S  &kp W     &kp RBKT   &kp DEL        &kp END  &kp HOME  &kp PAGE_UP
   &kp LBKT   &none  &kp C     &kp D  &kp U     &none      &kp K          &kp I    &kp L     &none
                               &to 9  &kp N0    &kp ENTER  &kp PAGE_DOWN
@@ -562,10 +574,19 @@
 
         GGST_Online {
             bindings = <
-  &kp RG(Q)  &none  &kp BSPC  &kp A  &to 0     &kp BSLH   &kp U          &none  &kp H  &kp L
+  &kp RG(Q)  &none  &kp BSPC  &kp A  &kp Q     &kp BSLH   &kp U          &none  &kp H  &kp L
   &none      &none  &kp X     &kp S  &kp W     &kp RBKT   &kp J          &kp K  &kp I  &kp O
   &kp LBKT   &none  &kp C     &kp D  &kp U     &none      &kp V          &kp B  &kp N  &kp M
                               &to 9  &kp N0    &kp ENTER  &kp PAGE_DOWN
+            >;
+        };
+
+        GGST_norm {
+            bindings = <
+  &kp RG(Q)  &none  &kp BSPC  &kp LEFT   &kp TILDE     &kp MINUS  &kp N7         &kp N8  &kp N9  &kp EQUAL
+  &none      &none  &kp X     &kp DOWN   &kp UP        &kp RBKT   &kp N4         &kp N5  &kp N6  &kp BSLH
+  &kp LBKT   &none  &kp C     &kp RIGHT  &kp INSERT    &kp SEMI   &kp N1         &kp N2  &kp N3  &kp APOS
+                              &kp COMMA  &kp DOT       &kp FSLH   &kp PAGE_DOWN
             >;
         };
     };
