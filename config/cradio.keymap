@@ -565,10 +565,10 @@
 
         Brawlhalla {
             bindings = <
-  &kp N1  &kp N2  &kp N3  &kp N4     &trans    &trans  &kp RIGHT  &trans  &trans  &trans
-  &kp Z   &kp X   &kp C   &kp V      &trans    &kp UP  &kp DOWN   &trans  &trans  &trans
-  &trans  &trans  &trans  &trans     &trans    &trans  &kp LEFT   &trans  &trans  &trans
-                          &kp SPACE  &trans    &trans  &trans
+  &kp N1  &kp N2  &kp N3  &kp N4     &trans       &trans  &kp RIGHT  &trans  &trans  &trans
+  &kp Z   &kp X   &kp C   &kp V      &kp TAB      &kp UP  &kp DOWN   &trans  &trans  &trans
+  &trans  &trans  &trans  &trans     &trans       &trans  &kp LEFT   &trans  &trans  &trans
+                          &kp SPACE  &kp SPACE    &trans  &trans
             >;
         };
 
