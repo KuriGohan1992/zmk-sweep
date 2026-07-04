@@ -605,5 +605,14 @@
                               &kp COMMA  &kp DOT       &kp FSLH   &kp PAGE_DOWN
             >;
         };
+
+        layer_14 {
+            bindings = <
+  &kp N1     &trans  &kp W   &trans     &kp R     &trans  &trans  &trans  &trans  &trans
+  &kp LSHFT  &kp A   &kp S   &kp D      &kp F     &trans  &trans  &trans  &trans  &trans
+  &kp LCTRL  &trans  &trans  &trans     &kp V     &trans  &trans  &trans  &trans  &trans
+                             &kp SPACE  &trans    &trans  &trans
+            >;
+        };
     };
 };
