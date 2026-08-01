@@ -482,10 +482,10 @@
 
         Base {
             bindings = <
-  &kp Q                   &kp W              &kp F                 &kp P                 &kp B           &kp J                  &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
-  &hrm_left LEFT_SHIFT A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G           &kp M                  &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &hrm_right RIGHT_SHIFT O
-  &kp Z                   &kp X              &kp C                 &kp D                 &kp V           &kp K                  &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
-                                                                   &kp SPACE             &mo_kp 2 ESC    &mt RIGHT_SHIFT ENTER  &mo_tog 1 6
+  &kp Q                   &kp W              &kp F                 &kp P                 &kp B           &kp J            &kp L                   &kp U                   &kp Y                       &kp BACKSPACE
+  &hrm_left LEFT_SHIFT A  &hrm_left LCTRL R  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI T  &kp G           &kp M            &hrm_right RIGHT_GUI N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_CONTROL I  &hrm_right RIGHT_SHIFT O
+  &kp Z                   &kp X              &kp C                 &kp D                 &kp V           &kp K            &kp H                   &kp COMMA               &kp PERIOD                  &kp SLASH
+                                                                   &kp SPACE             &mo_kp 2 ESC    &kp RIGHT_SHIFT  &mo_tog 1 6
             >;
         };
 
@@ -603,15 +603,6 @@
   &none      &none  &kp X     &kp DOWN   &kp UP        &kp RBKT   &kp N4         &kp N5  &kp N6  &kp BSLH
   &kp LBKT   &none  &kp C     &kp RIGHT  &kp INSERT    &kp SEMI   &kp N1         &kp N2  &kp N3  &kp APOS
                               &kp COMMA  &kp DOT       &kp FSLH   &kp PAGE_DOWN
-            >;
-        };
-
-        layer_14 {
-            bindings = <
-  &kp N1     &trans  &kp W   &trans     &kp R     &trans  &trans  &trans  &trans  &trans
-  &kp LSHFT  &kp A   &kp S   &kp D      &kp F     &trans  &trans  &trans  &trans  &trans
-  &kp LCTRL  &trans  &trans  &trans     &kp V     &trans  &trans  &trans  &trans  &trans
-                             &kp SPACE  &trans    &trans  &trans
             >;
         };
     };
