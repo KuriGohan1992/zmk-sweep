@@ -241,6 +241,30 @@
             key-positions = <24 23 22>;
             layers = <0>;
         };
+
+        split_left {
+            bindings = <&kp LA(LC(H))>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
+
+        split_right {
+            bindings = <&kp LA(LC(L))>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+
+        maximize {
+            bindings = <&kp LA(LC(ENTER))>;
+            key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        split_thirds {
+            bindings = <&kp LA(LC(D))>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
     };
 
     macros {
