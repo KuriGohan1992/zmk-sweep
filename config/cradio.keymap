@@ -265,6 +265,11 @@
             key-positions = <1 2>;
             layers = <0>;
         };
+
+        typing {
+            bindings = <&to 14>;
+            key-positions = <5 6 7>;
+        };
     };
 
     macros {
@@ -627,6 +632,15 @@
   &none      &none  &kp X     &kp DOWN   &kp UP        &kp RBKT   &kp N4         &kp N5  &kp N6  &kp BSLH
   &kp LBKT   &none  &kp C     &kp RIGHT  &kp INSERT    &kp SEMI   &kp N1         &kp N2  &kp N3  &kp APOS
                               &kp COMMA  &kp DOT       &kp FSLH   &kp PAGE_DOWN
+            >;
+        };
+
+        typing {
+            bindings = <
+  &kp Q  &kp W  &kp F  &kp P      &kp B           &kp J                  &kp L        &kp U      &kp Y       &kp BACKSPACE
+  &kp A  &kp R  &kp S  &kp T      &kp G           &kp M                  &kp N        &kp E      &kp I       &kp O
+  &kp Z  &kp X  &kp C  &kp D      &kp V           &kp K                  &kp H        &kp COMMA  &kp PERIOD  &kp SLASH
+                       &kp SPACE  &mo_kp 2 ESC    &mt RIGHT_SHIFT ENTER  &mo_tog 1 6
             >;
         };
     };
