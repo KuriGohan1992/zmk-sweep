@@ -266,7 +266,7 @@
             layers = <0>;
         };
 
-        typing {
+        gallium_v2 {
             bindings = <&to 14>;
             key-positions = <5 6 7>;
         };
@@ -635,11 +635,11 @@
             >;
         };
 
-        typing {
+        gallium_v2 {
             bindings = <
-  &kp Q  &kp W  &kp F  &kp P      &kp B           &kp J                  &kp L        &kp U      &kp Y       &kp BACKSPACE
-  &kp A  &kp R  &kp S  &kp T      &kp G           &kp M                  &kp N        &kp E      &kp I       &kp O
-  &kp Z  &kp X  &kp C  &kp D      &kp V           &kp K                  &kp H        &kp COMMA  &kp PERIOD  &kp SLASH
+  &kp B  &kp L  &kp D  &kp C      &kp V           &kp J                  &kp Y        &kp O      &kp U       &kp BSPC
+  &kp N  &kp R  &kp T  &kp S      &kp G           &kp P                  &kp H        &kp A      &kp E       &kp I
+  &kp X  &kp Q  &kp M  &kp W      &kp Z           &kp K                  &kp F        &kp COMMA  &kp PERIOD  &kp SLASH
                        &kp SPACE  &mo_kp 2 ESC    &mt RIGHT_SHIFT ENTER  &mo_tog 1 6
             >;
         };
