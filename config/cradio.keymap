@@ -266,7 +266,7 @@
             layers = <0>;
         };
 
-        gallium_v2 {
+        typing {
             bindings = <&to 14>;
             key-positions = <5 6 7>;
         };
@@ -529,10 +529,10 @@
 
         Numbers {
             bindings = <
-  &kp LG(TAB)  &kp EXCL   &kp AT     &kp HASH   &kp DLLR        &kp PRCNT           &kp CARET    &kp AMPS   &kp ASTRK  &kp BACKSPACE
-  &kp N1       &kp N2     &kp N3     &kp N4     &kp N5          &kp N6              &kp N7       &kp N8     &kp N9     &kp N0
-  &kp PLUS     &kp MINUS  &kp EQUAL  &kp LBKT   &kp BSLH        &kp PIPE            &kp RBKT     &kp COMMA  &kp DOT    &kp FSLH
-                                     &kp SPACE  &mo_kp 0 ESC    &mt LEFT_GUI ENTER  &mo_tog 1 6
+  &kp LG(TAB)  &kp RA(RG(F5))  &kp F12    &kp HASH   &kp DLLR        &kp PRCNT           &kp CARET    &kp AMPS   &kp ASTRK  &kp BACKSPACE
+  &kp N1       &kp N2          &kp N3     &kp N4     &kp N5          &kp N6              &kp N7       &kp N8     &kp N9     &kp N0
+  &kp PLUS     &kp MINUS       &kp EQUAL  &kp LBKT   &kp BSLH        &kp PIPE            &kp RBKT     &kp COMMA  &kp DOT    &kp FSLH
+                                          &kp SPACE  &mo_kp 0 ESC    &mt LEFT_GUI ENTER  &mo_tog 1 6
             >;
         };
 
@@ -574,10 +574,10 @@
 
         Macros {
             bindings = <
-  &kp LA(LC(LG(L)))  &notes      &vs_code    &cot_editor    &kp LA(LC(LG(S)))    &kp RG(DOWN)   &prev_song      &music          &next_song       &kp RG(UP)
-  &color_picker      &ss_save    &ss_copy    &kp LC(LG(T))  &kp LA(LC(LG(D)))    &settings      &finder         &yazi           &zen             &kitty
-  &kp RG(RA(X))      &kp LG(N1)  &kp LG(N2)  &kp LG(N5)     &kp LA(LC(LG(R)))    &faith_wifi    &mobile_number  &student_email  &personal_email  &stein
-                                             &kp SPACE      &kp LG(BACKSPACE)    &mendez_charl  &charl_mendez
+  &kp LA(LC(LG(L)))  &kp RG(RA(F5))  &vs_code    &cot_editor    &kp LA(LC(LG(S)))    &kp RG(DOWN)   &prev_song      &music          &next_song       &kp RG(UP)
+  &color_picker      &ss_save        &ss_copy    &kp LC(LG(T))  &kp LA(LC(LG(D)))    &settings      &finder         &yazi           &zen             &kitty
+  &kp RG(RA(X))      &kp LG(N1)      &kp LG(N2)  &kp LG(N5)     &kp LA(LC(LG(R)))    &faith_wifi    &mobile_number  &student_email  &personal_email  &stein
+                                                 &kp SPACE      &kp LG(BACKSPACE)    &mendez_charl  &charl_mendez
             >;
         };
 
@@ -635,12 +635,21 @@
             >;
         };
 
-        gallium_v2 {
+        typing {
             bindings = <
-  &kp B  &kp L  &kp D  &kp C      &kp V           &kp J                  &kp Y        &kp O      &kp U       &kp BSPC
-  &kp N  &kp R  &kp T  &kp S      &kp G           &kp P                  &kp H        &kp A      &kp E       &kp I
-  &kp X  &kp Q  &kp M  &kp W      &kp Z           &kp K                  &kp F        &kp COMMA  &kp PERIOD  &kp SLASH
+  &kp Q  &kp W  &kp F  &kp P      &kp B           &kp J                  &kp L        &kp U      &kp Y    &kp BSPC
+  &kp A  &kp R  &kp S  &kp T      &kp G           &kp M                  &kp N        &kp E      &kp I    &kp O
+  &kp Z  &kp X  &kp C  &kp D      &kp V           &kp K                  &kp H        &kp COMMA  &kp DOT  &kp FSLH
                        &kp SPACE  &mo_kp 2 ESC    &mt RIGHT_SHIFT ENTER  &mo_tog 1 6
+            >;
+        };
+
+        layer_15 {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans    &trans  &trans
             >;
         };
     };
