@@ -270,6 +270,11 @@
             bindings = <&to 14>;
             key-positions = <5 6 7>;
         };
+
+        to_gallium {
+            bindings = <&to 15>;
+            key-positions = <25 26 27>;
+        };
     };
 
     macros {
@@ -644,12 +649,12 @@
             >;
         };
 
-        layer_15 {
+        gallium_v2 {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans    &trans  &trans
+  &kp B  &kp L  &kp D  &kp C      &kp V           &kp J                  &kp Y        &kp O      &kp U    &kp BSPC
+  &kp N  &kp R  &kp T  &kp S      &kp G           &kp P                  &kp H        &kp A      &kp E    &kp I
+  &kp X  &kp Q  &kp M  &kp W      &kp Z           &kp K                  &kp F        &kp COMMA  &kp DOT  &kp FSLH
+                       &kp SPACE  &mo_kp 2 ESC    &mt RIGHT_SHIFT ENTER  &mo_tog 1 6
             >;
         };
     };
