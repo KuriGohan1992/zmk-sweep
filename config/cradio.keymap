@@ -168,13 +168,13 @@
         low_you {
             bindings = <&low_you>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <0 14>;
         };
 
         up_you {
             bindings = <&up_you>;
             key-positions = <7 8 32>;
-            layers = <0>;
+            layers = <0 14>;
         };
 
         up {
